@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VMsApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VMsApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
