@@ -25,7 +25,7 @@
                 </ResourceDictionary.ThemeDictionaries>
             </ResourceDictionary>
         </Grid.Resources>
-        <Grid x:Name="AppTitleBar" VerticalAlignment="Top" Height="48" Background="Transparent">
+        <Grid x:Name="AppTitleBar" VerticalAlignment="Top" Height="32" Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition x:Name="RightPaddingColumn" Width="0"/>
@@ -48,7 +48,7 @@
                 </TextBlock>
             </StackPanel>
         </Grid>
-        <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="40" Margin="0,48,0,0" HorizontalAlignment="Stretch">
+        <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="40" BorderBrush="#7B8088" BorderThickness="0,1,0,1" Margin="0,32,0,0" HorizontalAlignment="Stretch">
             <Grid.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
@@ -634,7 +634,7 @@
                 </StackPanel>
             </Grid>
         </Grid>
-        <Grid x:Name="LibraryPanel" BorderBrush="#7B8088" Width="200" HorizontalAlignment="Left" Margin="0,88,0,32" BorderThickness="1,1,1,1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="LibraryPanel" BorderThickness="1,0,1,1" BorderBrush="#7B8088" Width="200" HorizontalAlignment="Left" Margin="0,72,0,32" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
@@ -848,7 +848,7 @@
                 </Grid>
             </ToggleButton>
         </Grid>
-        <Grid x:Name="TabsGrid" Margin="202,88,0,32" BorderBrush="#646464" BorderThickness="1,1,1,1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="TabsGrid" Margin="202,72,0,32" BorderBrush="#646464" BorderThickness="1,1,1,1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>

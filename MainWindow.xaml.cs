@@ -25,7 +25,7 @@ namespace VMsApp
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AppTitleBar);
-            AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
+            AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Standard;
             this.SystemBackdrop = new MicaBackdrop { Kind = MicaKind.Base };
 
             this.TabsFrame.Navigate(typeof(HomePage));
@@ -40,7 +40,7 @@ namespace VMsApp
         private void HideLibrary_Click(object sender, RoutedEventArgs e)
         {
             this.LibraryPanel.Visibility = Visibility.Collapsed;
-            this.TabsGrid.Margin = new Thickness(0, 88, 0, 0);
+            this.TabsGrid.Margin = new Thickness(0, 72, 0, 0);
             this.FolderView.Margin = new Thickness(0, 0, 0, 32);
 
             if (ShowHideLibrary.IsChecked == true)
@@ -54,14 +54,14 @@ namespace VMsApp
             if (this.LibraryPanel.Visibility == Visibility.Visible)
             {
                 this.LibraryPanel.Visibility = Visibility.Collapsed;
-                this.TabsGrid.Margin = new Thickness(0, 88, 0, 32);
+                this.TabsGrid.Margin = new Thickness(0, 72, 0, 32);
                 this.FolderView.Margin = new Thickness(0, 0, 0, 32);
                 ShowHideLibrary.IsChecked = false;
             }
             else
             {
                 this.LibraryPanel.Visibility = Visibility.Visible;
-                this.TabsGrid.Margin = new Thickness(200, 88, 0, 32);
+                this.TabsGrid.Margin = new Thickness(200, 72, 0, 32);
                 this.FolderView.Margin = new Thickness(202, 0, 0, 32);
                 ShowHideLibrary.IsChecked = true;
             }
