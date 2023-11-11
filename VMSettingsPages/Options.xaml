@@ -99,7 +99,7 @@
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE977;" Margin="10,7,260,7"/>
                             <TextBlock Text="General" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
-                            <TextBlock Text="UWPFamilyOS" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
+                            <TextBlock Text="VMsAppOS" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
                     </ToggleButton>
                     <ToggleButton x:Name="PowerButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" BorderThickness="5,0,0,0" Tapped="PowerButton_Tapped" Margin="0,48,0,0" Click="PowerButton_Click" UseSystemFocusVisuals="False" IsTabStop="False" Checked="PowerButton_Checked" HorizontalAlignment="Center">
@@ -365,7 +365,7 @@
                             <TextBlock Text="Not encrypted" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
                     </Button>
-                    <Button x:Name="UWPToolsButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,336,0,0" Click="UWPToolsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                    <Button x:Name="VMsToolsButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,336,0,0" Click="VMsToolsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
                         <Button.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -392,7 +392,7 @@
                         </Button.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xEC7A;" Margin="10,7,260,7"/>
-                            <TextBlock Text="UWPTools" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
+                            <TextBlock Text="VMsTools" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Time sync off" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
                     </Button>

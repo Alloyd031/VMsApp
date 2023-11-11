@@ -640,12 +640,10 @@
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
                         <ResourceDictionary x:Key="Dark">
-                            <Color x:Key="SystemAltHighColor">#1E1E1E</Color>
-                            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1E1E1E"/>
                         </ResourceDictionary>
                         <ResourceDictionary x:Key="Light">
-                            <Color x:Key="SystemAltHighColor">White</Color>
-                            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="White"/>
                         </ResourceDictionary>
                     </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
@@ -1138,7 +1136,7 @@
                                 </MenuFlyoutSubItem>
                                 <MenuFlyoutItem Text="Install VMsAppTools..." UseSystemFocusVisuals="False" IsTabStop="False"/>
                                 <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                                <MenuFlyoutItem Text="Settings..." Click="VMSettings_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </ToggleButton>

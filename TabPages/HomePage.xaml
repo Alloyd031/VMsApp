@@ -128,7 +128,7 @@
                     </Grid>
                 </Button>
             </Grid>
-            <Grid x:Name="ConnectToUWPFamilyvCloudAirGrid" Padding="5,0,5,0">
+            <Grid x:Name="ConnectToVMsCompanyvCloudAirGrid" Padding="5,0,5,0">
                 <Button Width="150" Height="150" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="3,3,3,3" VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="4">
                     <Button.Resources>
                         <ResourceDictionary>
@@ -156,7 +156,7 @@
                     </Button.Resources>
                     <Grid Margin="-75,-75,-75,-75">
                         <FontIcon Glyph="&#xE753;" Margin="0,-28,0,28" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <TextBlock x:Uid="ConnectToUWPFamilyvCloudAirString" Text="Connect to UWPFamily vCloud Air" TextAlignment="Center" TextWrapping="Wrap" Margin="0,75,0,0" Height="38" VerticalAlignment="Top" Width="140"/>
+                        <TextBlock x:Uid="ConnectToVMsCompanyvCloudAirString" Text="Connect to VMsCompany vCloud Air" TextAlignment="Center" TextWrapping="Wrap" Margin="0,75,0,0" Height="38" VerticalAlignment="Top" Width="140"/>
                     </Grid>
                 </Button>
             </Grid>
