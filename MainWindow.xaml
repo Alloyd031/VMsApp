@@ -1,10 +1,11 @@
-<Window
+<winex:WindowEx
     x:Class="VMsApp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VMsApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winex="using:WinUIEx"
     mc:Ignorable="d"
     Title="VMsApp">
 
@@ -175,9 +176,9 @@
                                 <MenuFlyoutItem Text="VNC Connections" UseSystemFocusVisuals="False" IsTabStop="False"/>
                                 <MenuFlyoutItem Text="Message Log" UseSystemFocusVisuals="False" IsTabStop="False"/>
                             </MenuFlyoutSubItem>
-                            <MenuFlyoutItem Text="Install VMsAppTools..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Install VMsTools..." UseSystemFocusVisuals="False" IsTabStop="False"/>
                             <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Settings..." Click="VMSettings_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
                         </MenuBarItem>
                         <MenuBarItem x:Uid="TabsMenuString" Title="Tabs" UseSystemFocusVisuals="False" IsTabStop="False">
                             <MenuFlyoutItem x:Name="GoToHome" Text="Go to Home Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
@@ -691,7 +692,7 @@
                     </ResourceDictionary>
                 </AutoSuggestBox.Resources>
             </AutoSuggestBox>
-            <ToggleButton x:Name="MyComputer" Height="32" Width="178" Margin="0,84,0,0" CornerRadius="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False" VerticalAlignment="Top" UseSystemFocusVisuals="False" HorizontalAlignment="Center" IsDoubleTapEnabled="False">
+            <ToggleButton x:Name="MyComputer" Height="32" Width="178" Margin="0,84,0,0" CornerRadius="0" Tapped="MyComputer_Tapped" Click="MyComputer_Click" Checked="MyComputer_Checked" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False" VerticalAlignment="Top" UseSystemFocusVisuals="False" HorizontalAlignment="Center" IsDoubleTapEnabled="False">
                 <ToggleButton.Resources>
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
@@ -743,7 +744,7 @@
                     <TextBlock x:Uid="MyComputerString" Text="My Computer" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="36,0,0,0"/>
                 </Grid>
             </ToggleButton>
-            <ToggleButton x:Name="VMsAppOS" Height="32" Width="180" Margin="0,122,0,0" CornerRadius="0" UseSystemFocusVisuals="False" IsDoubleTapEnabled="False" IsTabStop="False" VerticalAlignment="Top" HorizontalAlignment="Center"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <ToggleButton x:Name="VMsAppOS" Height="32" Width="180" Margin="0,122,0,0" CornerRadius="0" UseSystemFocusVisuals="False" Tapped="VMsAppOS_Tapped" Click="VMsAppOS_Click" Checked="VMsAppOS_Checked" IsDoubleTapEnabled="False" IsTabStop="False" VerticalAlignment="Top" HorizontalAlignment="Center"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
                 <ToggleButton.Resources>
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
@@ -795,7 +796,7 @@
                     <TextBlock Text="VMsAppOS" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="38,0,0,0"/>
                 </Grid>
             </ToggleButton>
-            <ToggleButton x:Name="SharedVMs" Height="32" Width="180" Margin="0,160,0,0" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False" VerticalAlignment="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <ToggleButton x:Name="SharedVMs" Height="32" Width="180" Margin="0,160,0,0" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False" Click="SharedVMs_Click" Checked="SharedVMs_Checked" Tapped="SharedVMs_Tapped" VerticalAlignment="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
                 <ToggleButton.Resources>
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
@@ -879,7 +880,7 @@
                     </ResourceDictionary>
                 </Grid.Resources>
                 <StackPanel x:Name="LeftItems" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Left">
-                    <ToggleButton x:Name="MyComputerTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <ToggleButton x:Name="MyComputerTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" Checked="MyComputerTab_Checked" Tapped="MyComputerTab_Tapped" Click="MyComputerTab_Click" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsTabStop="False">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -929,7 +930,7 @@
                             <TextBlock x:Uid="MyComputerTabString" Text="My Computer" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="34,0,0,0"/>
                         </Grid>
                     </ToggleButton>
-                    <ToggleButton x:Name="HomeTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" IsTabStop="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch">
+                    <ToggleButton x:Name="HomeTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" Click="HomeTab_Click" Tapped="HomeTab_Tapped" Checked="HomeTab_Checked" IsDoubleTapEnabled="False" IsTabStop="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -979,7 +980,7 @@
                             <TextBlock x:Uid="HomeTabString" Text="Home" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="34,0,0,0"/>
                         </Grid>
                     </ToggleButton>
-                    <ToggleButton x:Name="SharedVMsTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" IsTabStop="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsDoubleTapEnabled="False">
+                    <ToggleButton x:Name="SharedVMsTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" Tapped="SharedVMsTab_Tapped" Click="SharedVMsTab_Click" Checked="SharedVMsTab_Checked" IsTabStop="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsDoubleTapEnabled="False">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -1029,7 +1030,7 @@
                             <TextBlock x:Uid="SharedVMsString" Text="Shared VMs" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="34,0,0,0"/>
                         </Grid>
                     </ToggleButton>
-                    <ToggleButton x:Name="VMTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Margin="2,2,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <ToggleButton x:Name="VMTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" RightTapped="VMTab_RightTapped" Tapped="VMTab_Tapped" Click="VMTab_Click" Checked="VMTab_Checked" IsDoubleTapEnabled="False" Margin="2,2,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" IsTabStop="False">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -1141,9 +1142,7 @@
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </ToggleButton>
-                </StackPanel>
-                <StackPanel x:Name="RightItems" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Right">
-                    <ToggleButton x:Name="TestPageTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" IsTabStop="False" Margin="0,2,2,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch">
+                    <ToggleButton x:Name="TestPageTab" Height="29" Width="175" CornerRadius="3,3,0,0" BorderThickness="1,1,1,0" HorizontalContentAlignment="Stretch" Checked="TestPageTab_Checked" IsTabStop="False" Margin="2,2,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" Click="TestTab_Click" Tapped="TestPageTab_Tapped">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -1340,4 +1339,4 @@
             </StackPanel>
         </Border>
     </Grid>
-</Window>
+</winex:WindowEx>
