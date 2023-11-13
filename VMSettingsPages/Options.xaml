@@ -64,15 +64,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
@@ -83,15 +83,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
@@ -115,15 +115,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
@@ -134,15 +134,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
@@ -165,15 +165,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
@@ -184,15 +184,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
@@ -216,15 +216,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
@@ -235,15 +235,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
@@ -253,7 +253,7 @@
                             <TextBlock Text="Snapshots" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                         </Grid>
                     </ToggleButton>
-                    <ToggleButton x:Name="AutoProtectButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Checked="AutoProtectButton_Checked" Margin="0,192,0,0" Click="AutoProtectButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center" Tapped="AutoProtectButton_Tapped">
+                    <ToggleButton x:Name="AutoProtectButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Checked="AutoProtectButton_Checked" Margin="0,192,0,0" Click="AutoProtectButton_Click" UseSystemFocusVisuals="False" IsTabStop="False" HorizontalAlignment="Center" Tapped="AutoProtectButton_Tapped">
                         <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
@@ -266,15 +266,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
@@ -285,15 +285,15 @@
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
 
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
                                         <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
                                         <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="#016B66"/>
-                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#016B66"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
@@ -304,251 +304,411 @@
                             <TextBlock Text="Disabled" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
                     </ToggleButton>
-                    <Button x:Name="GuestIsolationButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,240,0,0" Click="GuestIsolationButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    <ToggleButton x:Name="GuestIsolationButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" Checked="GuestIsolationButton_Checked" Tapped="GuestIsolationButton_Tapped" CornerRadius="0" Margin="0,240,0,0" Click="GuestIsolationButton_Click" UseSystemFocusVisuals="False" IsTabStop="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE72E;" Margin="10,7,260,7"/>
                             <TextBlock Text="Guest Isolation" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="AccessControlButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,288,0,0" Click="AccessControlButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="AccessControlButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,288,0,0" Tapped="AccessControlButton_Tapped" Checked="AccessControlButton_Checked" Click="AccessControlButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xEE3F;" Margin="10,7,260,7"/>
                             <TextBlock Text="Access Control" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Not encrypted" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="VMsToolsButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,336,0,0" Click="VMsToolsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="VMsToolsButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,336,0,0" Tapped="VMsToolsButton_Tapped" Checked="VMsToolsButton_Checked" Click="VMsToolsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xEC7A;" Margin="10,7,260,7"/>
                             <TextBlock Text="VMsTools" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Time sync off" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="VNCConnectionsButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,384,0,0" Click="VNCConnectionsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="VNCConnectionsButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,384,0,0" Tapped="VNCConnectionsButton_Tapped" Checked="VNCConnectionsButton_Checked" Click="VNCConnectionsButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE148;" Margin="10,7,260,7"/>
                             <TextBlock Text="VNC Connections" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Disabled" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="UnityButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,432,0,0" Click="UnityButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="UnityButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,432,0,0" Tapped="UnityButton_Tapped" Checked="UnityButton_Checked" Click="UnityButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE2AE;" Margin="10,7,260,7"/>
                             <TextBlock Text="Unity" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="ApplianceViewButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,483,0,0" Click="ApplianceViewButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="ApplianceViewButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,480,0,0" Tapped="ApplianceViewButton_Tapped" Checked="ApplianceViewButton_Checked" Click="ApplianceViewButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE12A;" Margin="10,7,260,7"/>
                             <TextBlock Text="Appliance View" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="AutologinButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,531,0,0" Click="AutologinButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="AutologinButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,528,0,0" Click="AutologinButton_Click" Tapped="AutologinButton_Tapped" Checked="AutologinButton_Checked" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE1A6;" Margin="10,7,260,7"/>
                             <TextBlock Text="Autologin" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Not supported" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
-                    </Button>
-                    <Button x:Name="AdvancedButton" Height="48" Width="320" VerticalAlignment="Top" CornerRadius="0" Margin="0,579,0,0" Click="AdvancedButton_Click" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
-                        <Button.Resources>
+                    </ToggleButton>
+                    <ToggleButton x:Name="AdvancedButton" Height="48" Width="320" VerticalAlignment="Top" BorderThickness="5,0,0,0" CornerRadius="0" Margin="0,576,0,0" Click="AdvancedButton_Click" Tapped="AdvancedButton_Tapped" Checked="AdvancedButton_Checked" UseSystemFocusVisuals="False" HorizontalAlignment="Center">
+                        <ToggleButton.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.ThemeDictionaries>
                                     <ResourceDictionary x:Key="Dark">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#4C4C4C"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#353535"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#4C4C4C"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="White"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                     <ResourceDictionary x:Key="Light">
-                                        <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#B8B8B8"/>
-                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#CFCFCF"/>
-                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B8B8B8"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="Transparent"/>
+
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="Black"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                        <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="{StaticResource SystemAccentColor}"/>
                                     </ResourceDictionary>
                                 </ResourceDictionary.ThemeDictionaries>
                             </ResourceDictionary>
-                        </Button.Resources>
+                        </ToggleButton.Resources>
                         <Grid Margin="-160,-24,-160,-24">
                             <FontIcon Glyph="&#xE9D9;" Margin="10,7,260,7"/>
                             <TextBlock Text="Advanced" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0"/>
                             <TextBlock Text="Default/Default" Style="{StaticResource CaptionTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0"/>
                         </Grid>
-                    </Button>
+                    </ToggleButton>
                 </Grid>
             </ScrollViewer>
         </Grid>
