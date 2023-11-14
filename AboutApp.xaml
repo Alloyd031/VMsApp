@@ -1,0 +1,91 @@
+<Window
+    x:Class="VMsApp.AboutApp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VMsApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="About App">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1F1F1F"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="White"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid x:Name="AboutWindowTitleBar" VerticalAlignment="Top" Height="32" Background="Transparent">
+            <StackPanel Orientation="Horizontal" Padding="15,0,0,0">
+                <FontIcon Glyph="&#xE946;" Width="18" Height="18" FontSize="17" HorizontalAlignment="Left"/>
+                <TextBlock Text="About App" Style="{StaticResource CaptionTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0">
+                    <TextBlock.Resources>
+                        <ResourceDictionary>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="Foreground" Color="White"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
+                        </ResourceDictionary>
+                    </TextBlock.Resources>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                <FontIcon Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:Uid="ProductInfoString" Text="Product Information:" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,0,0,0"/>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0" Width="300">
+                    <TextBlock Text="VMsApp" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock Text="Version: 0.1 Preview" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,32,0,0"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,132,0,0">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <FontIcon Glyph="&#xE125;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock x:Uid="CreatorString" Text="Creator:" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0"/>
+                </Grid>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,54,0,0">
+                    <TextBlock Text="Alloyd" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="BottomItems" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
+            <Button x:Uid="OKString" x:Name="OKButton" Height="35" Content="OK" UseSystemFocusVisuals="False" Click="OKButton_Click" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,10" BorderThickness="2,2,2,2" IsTabStop="False">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource SystemAccentColor}"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="{StaticResource SystemAccentColorDark3}"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource SystemAccentColor}"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="{StaticResource SystemAccentColorLight3}"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

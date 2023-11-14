@@ -128,6 +128,11 @@ namespace VMsApp
             m_window = new VMSettings();
             m_window.Activate();
         }
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            m_window = new AboutApp();
+            m_window.Activate();
+        }
         private void MyComputerTab_Tapped(object sender, TappedRoutedEventArgs e)
         {
             e.Handled = true;

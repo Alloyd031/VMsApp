@@ -156,7 +156,7 @@
                     </Button.Resources>
                     <Grid Margin="-75,-75,-75,-75">
                         <FontIcon Glyph="&#xE753;" Margin="0,-28,0,28" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <TextBlock x:Uid="ConnectToVMsCompanyvCloudAirString" Text="Connect to VMsCompany vCloud Air" TextAlignment="Center" TextWrapping="Wrap" Margin="0,75,0,0" Height="38" VerticalAlignment="Top" Width="140"/>
+                        <TextBlock x:Uid="ConnectToVMsCompanyvCloudAirString" Text="Connect to VMsCompany vCloud Air" TextAlignment="Center" TextWrapping="Wrap" Margin="0,75,0,0" Height="56" VerticalAlignment="Top" Width="134"/>
                     </Grid>
                 </Button>
             </Grid>
