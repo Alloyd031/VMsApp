@@ -8,10 +8,7 @@
     mc:Ignorable="d"
     Title="VM Settings">
 
-    <Grid x:Name="ContainerGrid"
-          Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-		  HorizontalAlignment="Stretch"
-		  VerticalAlignment="Stretch">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.ThemeDictionaries>

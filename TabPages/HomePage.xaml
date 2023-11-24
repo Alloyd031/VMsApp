@@ -13,12 +13,10 @@
             <ResourceDictionary>
                 <ResourceDictionary.ThemeDictionaries>
                     <ResourceDictionary x:Key="Dark">
-                        <Color x:Key="SystemAltHighColor">#1E1E1E</Color>
-                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1E1E1E"/>
                     </ResourceDictionary>
                     <ResourceDictionary x:Key="Light">
-                        <Color x:Key="SystemAltHighColor">#FFFFFF</Color>
-                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#FFFFFF"/>
                     </ResourceDictionary>
                 </ResourceDictionary.ThemeDictionaries>
             </ResourceDictionary>
