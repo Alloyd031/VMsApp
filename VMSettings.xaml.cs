@@ -18,31 +18,19 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics;
 using Microsoft.UI.Xaml.Interop;
+using WinUIEx;
 
 namespace VMsApp
 {
-    public sealed partial class VMSettings : Window
+    public sealed partial class VMSettings : WindowEx
     {
-        private AppWindow _apw;
-        private OverlappedPresenter _presenter;
-
-        public void GetAppWindowAndPresenter()
-        {
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
-            WindowId myWndId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hWnd);
-            _apw = AppWindow.GetFromWindowId(myWndId);
-            _presenter = _apw.Presenter as OverlappedPresenter;
-        }
         public VMSettings()
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(SettingsWindowTitleBar);
-            AppWindow.Resize(new SizeInt32(759, 734));
-            GetAppWindowAndPresenter();
-            _presenter.IsResizable = false;
-            _presenter.IsMaximizable = false;
-            _presenter.IsMinimizable = false;
+            AppWindow.Resize(new SizeInt32(780, 760));
+            this.CenterOnScreen();
 
             ContentFrame.Navigate(typeof(Hardware), null, new SuppressNavigationTransitionInfo());
 

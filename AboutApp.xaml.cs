@@ -15,31 +15,19 @@ using Microsoft.UI.Xaml.Navigation;
 using Windows.Graphics;
 using Microsoft.UI.Windowing;
 using Microsoft.UI;
+using WinUIEx;
 
 namespace VMsApp
 {
-    public sealed partial class AboutApp : Window
+    public sealed partial class AboutApp : WindowEx
     {
-        private AppWindow _apw;
-        private OverlappedPresenter _presenter;
-
-        public void GetAppWindowAndPresenter()
-        {
-            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
-            WindowId myWndId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hWnd);
-            _apw = AppWindow.GetFromWindowId(myWndId);
-            _presenter = _apw.Presenter as OverlappedPresenter;
-        }
         public AboutApp()
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AboutWindowTitleBar);
             AppWindow.Resize(new SizeInt32(647, 458));
-            GetAppWindowAndPresenter();
-            _presenter.IsResizable = false;
-            _presenter.IsMaximizable = false;
-            _presenter.IsMinimizable = false;
+            this.CenterOnScreen();
         }
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {

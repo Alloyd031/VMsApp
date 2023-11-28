@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="VMsApp.TabPages.MyComputerPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -8,17 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
         <Grid.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.ThemeDictionaries>
                     <ResourceDictionary x:Key="Dark">
-                        <Color x:Key="SystemAltHighColor">#1F1F1F</Color>
-                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1F1F1F"/>
                     </ResourceDictionary>
                     <ResourceDictionary x:Key="Light">
-                        <Color x:Key="SystemAltHighColor">White</Color>
-                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="White"/>
                     </ResourceDictionary>
                 </ResourceDictionary.ThemeDictionaries>
             </ResourceDictionary>
