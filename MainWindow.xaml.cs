@@ -76,7 +76,7 @@ namespace VMsApp
         private void HideLibrary_Click(object sender, RoutedEventArgs e)
         {
             this.LibraryPanel.Visibility = Visibility.Collapsed;
-            this.TabsGrid.Margin = new Thickness(0, 72, 0, 0);
+            this.TabsGrid.Margin = new Thickness(0, 72, 0, 32);
             this.FolderView.Margin = new Thickness(0, 0, 0, 32);
 
             if (ShowHideLibrary.IsChecked == true)
