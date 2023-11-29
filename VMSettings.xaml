@@ -81,7 +81,7 @@
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorDark1}"/>
 
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
@@ -132,7 +132,7 @@
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorDark1}"/>
 
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="Black"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPointerOver" Color="Transparent"/>
