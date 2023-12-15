@@ -462,7 +462,7 @@
                 </Grid>
             </ScrollViewer>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-                <Button VerticalAlignment="Top" Content="Add..." Width="80" Height="35" Margin="0,0,10,10" HorizontalAlignment="Right" BorderThickness="2,2,2,2" IsTabStop="False" UseSystemFocusVisuals="False">
+                <Button VerticalAlignment="Top" Content="Add..." Click="AddButton_Click" Width="80" Height="35" Margin="0,0,10,10" HorizontalAlignment="Right" BorderThickness="2,2,2,2" IsTabStop="False" UseSystemFocusVisuals="False">
                     <Button.Resources>
                         <ResourceDictionary>
                             <ResourceDictionary.ThemeDictionaries>
@@ -488,7 +488,7 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Content="Remove" Width="80" Height="35" Margin="0,0,10,10" HorizontalAlignment="Right" IsTabStop="False" BorderThickness="2,2,2,2" UseSystemFocusVisuals="False" VerticalAlignment="Top">
+                <Button x:Name="RemoveButton" Content="Remove" Click="RemoveButton_Click" Width="80" Height="35" Margin="0,0,10,10" HorizontalAlignment="Right" IsTabStop="False" BorderThickness="2,2,2,2" UseSystemFocusVisuals="False" VerticalAlignment="Top">
                     <Button.Resources>
                         <ResourceDictionary>
                             <ResourceDictionary.ThemeDictionaries>

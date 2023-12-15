@@ -49,7 +49,7 @@
             </StackPanel>
         </Grid>
         <StackPanel Orientation="Horizontal" Margin="0,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" BorderThickness="0,1,0,0" BorderBrush="#69A1BF">
-            <ToggleButton x:Name="HardwareTab" Height="48" Width="160" CornerRadius="2,0,0,0" BorderThickness="0,0,0,4" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Checked="HardwareTab_Checked" Margin="5,0,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsTabStop="False" Click="HardwareTab_Click" Tapped="HardwareTab_Tapped">
+            <ToggleButton x:Name="HardwareTab" Height="48" Width="160" CornerRadius="2,0,0,0" BorderThickness="0,0,0,5" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Checked="HardwareTab_Checked" Margin="5,0,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" IsTabStop="False" Click="HardwareTab_Click" Tapped="HardwareTab_Tapped">
                 <ToggleButton.Resources>
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
@@ -78,8 +78,8 @@
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorDark1}"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorLight1}"/>
 
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>
@@ -100,7 +100,7 @@
                 </Grid>
             </ToggleButton>
             <AppBarSeparator VerticalAlignment="Stretch"/>
-            <ToggleButton x:Name="OptionsTab" Height="48" Width="160" CornerRadius="0" BorderThickness="0,0,0,4" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Margin="3,0,0,0" IsTabStop="False" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" Click="OptionsTab_Click" Tapped="OptionsTab_Tapped" Checked="OptionsTab_Checked">
+            <ToggleButton x:Name="OptionsTab" Height="48" Width="160" CornerRadius="0" BorderThickness="0,0,0,5" HorizontalContentAlignment="Stretch" IsDoubleTapEnabled="False" Margin="3,0,0,0" IsTabStop="False" VerticalAlignment="Top" UseSystemFocusVisuals="False" VerticalContentAlignment="Stretch" Click="OptionsTab_Click" Tapped="OptionsTab_Tapped" Checked="OptionsTab_Checked">
                 <ToggleButton.Resources>
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
@@ -129,8 +129,8 @@
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundPointerOver" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="Transparent"/>
                                 <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="Black"/>
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorDark1}"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
+                                <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource SystemAccentColorLight1}"/>
 
                                 <SolidColorBrush x:Key="ToggleButtonBorderBrushChecked" Color="{StaticResource SystemAccentColor}"/>
                                 <SolidColorBrush x:Key="ToggleButtonBackgroundChecked" Color="Transparent"/>

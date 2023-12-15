@@ -13,11 +13,13 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using VMsApp.Dialogs;
 
 namespace VMsApp.VMSettingsPages
 {
     public sealed partial class Hardware : Page
     {
+        private Window m_window;
         public Hardware()
         {
             this.InitializeComponent();
@@ -311,6 +313,16 @@ namespace VMsApp.VMSettingsPages
             {
                 HardwareFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
             }
+        }
+        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        {
+            m_window = new NotAvailableWindow();
+            m_window.Activate();
+        }
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            m_window = new NotAvailableWindow();
+            m_window.Activate();
         }
     }
 }
