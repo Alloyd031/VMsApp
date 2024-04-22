@@ -13,26 +13,13 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 
-
-namespace VMsApp
+namespace VMsApp.VMSettingsPages.VMSettingsHardware
 {
-    public sealed partial class VMSettings : ContentDialog
+    public sealed partial class Memory : Page
     {
-        public VMSettings()
+        public Memory()
         {
             this.InitializeComponent();
-        }
-        private void OKButton_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
-        }
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
-        }
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
-        {
-            Hide();
         }
     }
 }

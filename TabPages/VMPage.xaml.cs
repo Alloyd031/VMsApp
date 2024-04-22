@@ -17,15 +17,15 @@ namespace VMsApp.TabPages
 {
     public sealed partial class VMPage : Page
     {
-        private Window m_window;
         public VMPage()
         {
             this.InitializeComponent();
         }
-        private void EditVMSettings_Click(object sender, RoutedEventArgs e)
+        private async void EditVMSettings_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new VMSettings();
-            m_window.Activate();
+            VMSettings dialog = new VMSettings();
+            dialog.XamlRoot = this.Content.XamlRoot;
+            ContentDialogResult result = await dialog.ShowAsync();
         }
     }
 }

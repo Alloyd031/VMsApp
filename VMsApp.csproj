@@ -11,6 +11,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="AboutApp.xaml" />
@@ -24,6 +25,8 @@
     <None Remove="VMSettingsPages\Hardware.xaml" />
     <None Remove="VMSettingsPages\NotAvailable.xaml" />
     <None Remove="VMSettingsPages\Options.xaml" />
+    <None Remove="VMSettingsPages\VMSettingsHardware\Memory.xaml" />
+    <None Remove="VMSettingsPages\VMSettingsHardware\Processors.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,9 +40,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
-    <PackageReference Include="WinUIEx" Version="2.3.3" />
+    <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.0.240109" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
+    <PackageReference Include="WinUIEx" Version="2.3.4" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 	
@@ -54,6 +58,16 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="VMSettingsPages\VMSettingsHardware\Processors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="VMSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AboutApp.xaml">
@@ -91,11 +105,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="VMSettings.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
     <Page Update="TabPages\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Dialogs\NotAvailableWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="VMSettingsPages\VMSettingsHardware\Memory.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

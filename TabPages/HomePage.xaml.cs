@@ -1,3 +1,4 @@
+using Microsoft.UI.Input;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -20,6 +21,18 @@ namespace VMsApp.TabPages
         public HomePage()
         {
             this.InitializeComponent();
+        }
+        public void ChangeCursor(InputCursor cursor)
+        {
+            this.ProtectedCursor = cursor;
+        } 
+        private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            ChangeCursor(InputSystemCursor.Create(InputSystemCursorShape.Hand));
+        }
+        private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            ChangeCursor(InputSystemCursor.Create(InputSystemCursorShape.Arrow));
         }
     }
 }
