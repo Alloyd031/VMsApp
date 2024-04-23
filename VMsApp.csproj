@@ -10,12 +10,13 @@
 	<PublishProfile Condition="'$(PublishWebProfile)' == 'true'">true</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
-    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
 	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="AboutApp.xaml" />
     <None Remove="Dialogs\NotAvailableWindow.xaml" />
+    <None Remove="Styles\MenuFlyout.xaml" />
     <None Remove="TabPages\HomePage.xaml" />
     <None Remove="TabPages\MyComputerPage.xaml" />
     <None Remove="TabPages\SharedVMsPage.xaml" />
@@ -121,6 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="VMSettingsPages\VMSettingsHardware\Memory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\MenuFlyout.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

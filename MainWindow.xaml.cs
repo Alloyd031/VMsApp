@@ -22,6 +22,7 @@ using WinUIEx;
 using Windows.Graphics;
 using Microsoft.UI;
 using System.Runtime.InteropServices;
+using Microsoft.UI.Input;
 
 namespace VMsApp
 {
@@ -36,7 +37,7 @@ namespace VMsApp
             AppWindow.Resize(new SizeInt32(1404, 916));
             this.CenterOnScreen();
 
-            AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
+            AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Collapsed;
 
             this.FolderView.Visibility = Visibility.Collapsed;
             this.TabsGrid.Margin = new Thickness(201, 47, 0, 32);
@@ -125,6 +126,27 @@ namespace VMsApp
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                this.Maximize();
+                MaximizeIcon.Glyph = "\uE923";
+            }
+            else
+            {
+                this.Restore();
+                MaximizeIcon.Glyph = "\uE922";
+            }
+        }
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Minimize();
         }
     }
 }
