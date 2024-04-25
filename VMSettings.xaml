@@ -12,6 +12,10 @@
     IsResizable="False"
     IsShownInSwitchers="False">
 
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="Base"/>
+    </Window.SystemBackdrop>
+
     <Grid>
         <Grid x:Name="VMSettingsTitleBar" Background="Transparent" Height="48" VerticalAlignment="Top" PointerPressed="VMSettingsTitleBar_PointerPressed" PointerReleased="VMSettingsTitleBar_PointerReleased" PointerMoved="VMSettingsTitleBar_PointerMoved">
             <Grid>
