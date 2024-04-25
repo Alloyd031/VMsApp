@@ -48,7 +48,7 @@ namespace VMsApp.VMSettingsPages
                 case "AccessControl":
                     OptionsFrame.Navigate(typeof(NotAvailable));
                     break;
-                case "UWPTools":
+                case "VMsTools":
                     OptionsFrame.Navigate(typeof(NotAvailable));
                     break;
                 case "VNCConnections":
