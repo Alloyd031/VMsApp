@@ -45,7 +45,7 @@
                         <FontIcon Glyph="&#xEE3F;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="UWPTools" Content="UWPTools">
+                <NavigationViewItem x:Name="VMsTools" Content="UWPTools">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xEC7A;"/>
                     </NavigationViewItem.Icon>
