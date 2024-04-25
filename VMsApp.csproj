@@ -15,11 +15,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="AboutApp.xaml" />
+    <None Remove="Dialogs\MessageLog.xaml" />
     <None Remove="Dialogs\NotAvailableWindow.xaml" />
     <None Remove="TabPages\HomePage.xaml" />
     <None Remove="TabPages\MyComputerPage.xaml" />
     <None Remove="TabPages\SharedVMsPage.xaml" />
-    <None Remove="TabPages\TestPage.xaml" />
     <None Remove="TabPages\VMPage.xaml" />
     <None Remove="VMSettings.xaml" />
     <None Remove="VMSettingsPages\Hardware.xaml" />
@@ -43,6 +43,9 @@
     <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.0.240109" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
+    <PackageReference Include="WinUICommunity.Components" Version="6.7.0" />
+    <PackageReference Include="WinUICommunity.Core" Version="6.7.0" />
+    <PackageReference Include="WinUICommunity.Win2D" Version="6.7.0" />
     <PackageReference Include="WinUIEx" Version="2.3.4" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -60,12 +63,17 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="VMSettingsPages\VMSettingsHardware\Processors.xaml">
+    <Page Update="VMSettings.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="VMSettings.xaml">
+    <Page Update="Dialogs\MessageLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="VMSettingsPages\VMSettingsHardware\Processors.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
@@ -81,11 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="TabPages\SharedVMsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="TabPages\TestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

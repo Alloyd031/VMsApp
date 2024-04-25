@@ -1,0 +1,34 @@
+<ContentDialog
+    x:Class="VMsApp.Dialogs.MessageLog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VMsApp.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Style="{StaticResource DefaultContentDialogStyle}">
+
+    <ContentDialog.Resources>
+        <ResourceDictionary>
+            <x:Double x:Key="ContentDialogMaxWidth">1100</x:Double>
+            <Thickness x:Key="ContentDialogPadding">0</Thickness>
+        </ResourceDictionary>
+    </ContentDialog.Resources>
+
+    <Grid x:Name="ContainerGrid" Width="440" Height="500">
+        <Button	x:Name="CloseButton" Width="46" Height="32" Background="Transparent" BorderBrush="Transparent" Click="CloseButton_Click" UseSystemFocusVisuals="False" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <FontIcon Glyph="&#xE8BB;" FontSize="10" Margin="-23,-16,-23,-16"/>
+        </Button>
+        <TextBlock Text="Summary" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,10,0,0"/>
+        <TextBlock Text="Time" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,14,0,0"/>
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="Message Logs are not available" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+        </Grid>
+        <Button Margin="225,429,0,0" Width="100" Height="35" Content="Remove" VerticalAlignment="Top" IsEnabled="False" UseSystemFocusVisuals="False"/>
+        <Button Margin="330,429,0,0" Width="100" Height="35" Content="Remove All" VerticalAlignment="Top" IsEnabled="False" UseSystemFocusVisuals="False"/>
+        <Border Grid.Row="1" VerticalAlignment="Bottom" Height="31">
+            <TextBlock Text="No unread messages" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="11,0,0,0"/>
+        </Border>
+    </Grid>
+</ContentDialog>

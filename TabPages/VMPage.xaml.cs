@@ -12,20 +12,21 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using WinUIEx;
 
 namespace VMsApp.TabPages
 {
     public sealed partial class VMPage : Page
     {
+        private Window m_window;
         public VMPage()
         {
             this.InitializeComponent();
         }
-        private async void EditVMSettings_Click(object sender, RoutedEventArgs e)
+        private void EditVMSettings_Click(object sender, RoutedEventArgs e)
         {
-            VMSettings dialog = new VMSettings();
-            dialog.XamlRoot = this.Content.XamlRoot;
-            ContentDialogResult result = await dialog.ShowAsync();
+            m_window = new VMSettings();
+            m_window.Show();
         }
     }
 }
