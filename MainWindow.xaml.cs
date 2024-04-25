@@ -194,17 +194,15 @@ namespace VMsApp
         {
             this.Close();
         }
-        private async void MessageLog_Click(object sender, RoutedEventArgs e)
+        private void MessageLog_Click(object sender, RoutedEventArgs e)
         {
-            MessageLog dialog = new MessageLog();
-            dialog.XamlRoot = this.Content.XamlRoot;
-            await dialog.ShowAsync();
+            m_window = new MessageLog();
+            m_window.Show();
         }
-        private async void VMMessageLog_Click(object sender, RoutedEventArgs e)
+        private void VMMessageLog_Click(object sender, RoutedEventArgs e)
         {
-            MessageLog dialog = new MessageLog();
-            dialog.XamlRoot = this.Content.XamlRoot;
-            await dialog.ShowAsync();
+            m_window = new MessageLog();
+            m_window.Show();
         }
         private void AppTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
         {

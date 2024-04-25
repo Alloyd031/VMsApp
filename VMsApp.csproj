@@ -63,12 +63,12 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="VMSettings.xaml">
+    <Page Update="Dialogs\MessageLog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Dialogs\MessageLog.xaml">
+    <Page Update="VMSettings.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

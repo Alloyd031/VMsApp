@@ -915,7 +915,7 @@
                     <FontIcon Glyph="&#xE15F;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Width="46"/>
                     <FlyoutBase.AttachedFlyout>
                         <MenuFlyout Placement="TopEdgeAlignedRight">
-                            <MenuFlyoutItem Text="Open Message Log" HorizontalAlignment="Stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Open Message Log" Click="MessageLog_Click" HorizontalAlignment="Stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
                             <MenuFlyoutItem Text="Clear Messages" HorizontalAlignment="Stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
                         </MenuFlyout>
                     </FlyoutBase.AttachedFlyout>
