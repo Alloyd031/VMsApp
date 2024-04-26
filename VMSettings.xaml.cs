@@ -28,7 +28,6 @@ namespace VMsApp
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-        private Window m_window;
         public VMSettings()
         {
             this.InitializeComponent();
@@ -42,6 +41,41 @@ namespace VMsApp
             Microsoft.UI.WindowId myWndId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hWnd);
             _apw = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(myWndId);
         }
+        public static void CreateModalWindow(WindowEx parentWindow, WindowEx childWindow, bool summonWindowAutomatically = true, bool blockInput = false)
+        {
+            IntPtr hWndChildWindow = WinRT.Interop.WindowNative.GetWindowHandle(childWindow);
+            IntPtr hWndParentWindow = WinRT.Interop.WindowNative.GetWindowHandle(parentWindow);
+            SetWindowLong(hWndChildWindow, GWL_HWNDPARENT, hWndParentWindow);
+            (childWindow.AppWindow.Presenter as OverlappedPresenter).IsModal = true;
+            if (blockInput == true)
+            {
+                EnableWindow(hWndParentWindow, false);
+                childWindow.Closed += ChildWindow_Closed;
+                void ChildWindow_Closed(object sender, Microsoft.UI.Xaml.WindowEventArgs args)
+                {
+                    EnableWindow(hWndParentWindow, true);
+                }
+            }
+            if (summonWindowAutomatically == true) childWindow.Show();
+        }
+        private static IntPtr SetWindowLong(IntPtr hWnd, int nIndex, IntPtr dwNewLong)
+        {
+            if (IntPtr.Size == 4)
+            {
+                return SetWindowLongPtr32(hWnd, nIndex, dwNewLong);
+            }
+            return SetWindowLongPtr64(hWnd, nIndex, dwNewLong);
+        }
+        [DllImport("User32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        private static extern bool EnableWindow(IntPtr hWnd, bool bEnable);
+
+        private const int GWL_HWNDPARENT = (-8);
+
+        [DllImport("User32.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowLong")]
+        private static extern IntPtr SetWindowLongPtr32(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
+
+        [DllImport("User32.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowLongPtr")]
+        private static extern IntPtr SetWindowLongPtr64(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -53,11 +87,6 @@ namespace VMsApp
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-        private void HelpButton_Click(object sender, RoutedEventArgs e)
-        {
-            m_window = new FeatureNotAvailable();
-            m_window.Show();
         }
         private void VMSettingsTitleBar_PointerPressed(object sender, PointerRoutedEventArgs e)
         {

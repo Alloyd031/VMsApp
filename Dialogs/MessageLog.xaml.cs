@@ -45,16 +45,6 @@ namespace VMsApp.Dialogs
         {
             this.Close();
         }
-        private void RemoveButton_Click(object sender, RoutedEventArgs e)
-        {
-            m_window = new FeatureNotAvailable();
-            m_window.Show();
-        }
-        private void RemoveAllButton_Click(object sender, RoutedEventArgs e)
-        {
-            m_window = new FeatureNotAvailable();
-            m_window.Show();
-        }
         private void MessageLogTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
             //nXWindow = _apw.Position.X;

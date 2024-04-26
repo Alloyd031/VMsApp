@@ -136,8 +136,8 @@
             <TextBlock Text="Message Logs are not available" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
         </Grid>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,0,0,32">
-            <Button x:Name="RemoveButton" Margin="0,0,5,0" Content="Remove" Click="RemoveButton_Click" VerticalAlignment="Center" HorizontalAlignment="Right" UseSystemFocusVisuals="False"/>
-            <Button x:Name="RemoveAllButton" Margin="0,0,5,0" Content="Remove All" Click="RemoveAllButton_Click" VerticalAlignment="Center" HorizontalAlignment="Right" UseSystemFocusVisuals="False"/>
+            <Button x:Name="RemoveButton" Margin="0,0,5,0" Content="Remove" VerticalAlignment="Center" HorizontalAlignment="Right" UseSystemFocusVisuals="False"/>
+            <Button x:Name="RemoveAllButton" Margin="0,0,5,0" Content="Remove All" VerticalAlignment="Center" HorizontalAlignment="Right" UseSystemFocusVisuals="False"/>
         </StackPanel>
         <Border Grid.Row="1" VerticalAlignment="Bottom" Height="32">
             <TextBlock Text="No unread messages" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="11,0,0,0"/>
