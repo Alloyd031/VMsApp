@@ -24,7 +24,8 @@ namespace VMsApp.NewVMWizardPages
         }
         private void FinishButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var newVMWizard = new NewVMWizard();
+            newVMWizard.Close();
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
