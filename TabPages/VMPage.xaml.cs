@@ -20,7 +20,6 @@ namespace VMsApp.TabPages
 {
     public sealed partial class VMPage : Page
     {
-        private Window m_window;
         public VMPage()
         {
             this.InitializeComponent();
