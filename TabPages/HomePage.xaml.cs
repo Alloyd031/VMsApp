@@ -22,7 +22,6 @@ namespace VMsApp.TabPages
 {
     public sealed partial class HomePage : Page
     {
-        private Window m_window;
         public static void CreateModalWindow(WindowEx parentWindow, WindowEx childWindow, bool summonWindowAutomatically = true, bool blockInput = false)
         {
             IntPtr hWndChildWindow = WinRT.Interop.WindowNative.GetWindowHandle(childWindow);

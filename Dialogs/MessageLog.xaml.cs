@@ -27,7 +27,6 @@ namespace VMsApp.Dialogs
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-        private Window m_window;
         public MessageLog()
         {
             this.InitializeComponent();
