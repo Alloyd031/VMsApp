@@ -8,7 +8,7 @@
     xmlns:winex="using:WinUIEx"
     mc:Ignorable="d"
     IsResizable="False"
-    IsShownInSwitchers="False">
+    Title="Message Log">
     
     <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base"/>

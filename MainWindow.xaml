@@ -678,7 +678,7 @@
                         </TabViewItem.IconSource>
                         <pages:SharedVMsPage/>
                     </TabViewItem>
-                    <TabViewItem x:Uid="VMTab" Header="UWPFamilyOS" UseSystemFocusVisuals="False" IsTabStop="False">
+                    <TabViewItem x:Uid="VMTab" Header="VMsAppOS" UseSystemFocusVisuals="False" IsTabStop="False">
                         <TabViewItem.IconSource>
                             <SymbolIconSource Symbol="Placeholder"/>
                         </TabViewItem.IconSource>

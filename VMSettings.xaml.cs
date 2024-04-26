@@ -56,7 +56,7 @@ namespace VMsApp
         }
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new NotAvailableWindow();
+            m_window = new FeatureNotAvailable();
             m_window.Show();
         }
         private void VMSettingsTitleBar_PointerPressed(object sender, PointerRoutedEventArgs e)

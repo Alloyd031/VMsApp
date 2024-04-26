@@ -15,8 +15,16 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="AboutApp.xaml" />
+    <None Remove="Dialogs\FeatureNotAvailable.xaml" />
     <None Remove="Dialogs\MessageLog.xaml" />
-    <None Remove="Dialogs\NotAvailableWindow.xaml" />
+    <None Remove="NewVMWizardPages\Compatibility.xaml" />
+    <None Remove="NewVMWizardPages\DiskCapacity.xaml" />
+    <None Remove="NewVMWizardPages\Installation.xaml" />
+    <None Remove="NewVMWizardPages\Main.xaml" />
+    <None Remove="NewVMWizardPages\NameVirtualMachine.xaml" />
+    <None Remove="NewVMWizardPages\OperatingSystem.xaml" />
+    <None Remove="NewVMWizardPages\ProcessorConfiguration.xaml" />
+    <None Remove="NewVMWizardPages\ReadyToCreate.xaml" />
     <None Remove="TabPages\HomePage.xaml" />
     <None Remove="TabPages\MyComputerPage.xaml" />
     <None Remove="TabPages\SharedVMsPage.xaml" />
@@ -27,6 +35,7 @@
     <None Remove="VMSettingsPages\Options.xaml" />
     <None Remove="VMSettingsPages\VMSettingsHardware\Memory.xaml" />
     <None Remove="VMSettingsPages\VMSettingsHardware\Processors.xaml" />
+    <None Remove="Wizards\NewVMWizard.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -61,6 +70,41 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\ReadyToCreate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\Compatibility.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\DiskCapacity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\ProcessorConfiguration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\OperatingSystem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\NameVirtualMachine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\Installation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Dialogs\MessageLog.xaml">
@@ -118,12 +162,22 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Dialogs\NotAvailableWindow.xaml">
+    <Page Update="Dialogs\FeatureNotAvailable.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="VMSettingsPages\VMSettingsHardware\Memory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Wizards\NewVMWizard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="NewVMWizardPages\Main.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

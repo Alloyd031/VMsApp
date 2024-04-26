@@ -19,7 +19,7 @@ using WinUIEx;
 
 namespace VMsApp.Dialogs
 {
-    public sealed partial class NotAvailableWindow : WindowEx
+    public sealed partial class FeatureNotAvailable : WindowEx
     {
         [DllImport("User32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern bool GetCursorPos(out Windows.Graphics.PointInt32 lpPoint);
@@ -27,7 +27,7 @@ namespace VMsApp.Dialogs
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-        public NotAvailableWindow()
+        public FeatureNotAvailable()
         {
             this.InitializeComponent(); 
             ExtendsContentIntoTitleBar = true;

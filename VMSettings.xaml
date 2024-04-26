@@ -9,8 +9,7 @@
     xmlns:vmsettings="using:VMsApp.VMSettingsPages"
     mc:Ignorable="d"
     Title="VM Settings"
-    IsResizable="False"
-    IsShownInSwitchers="False">
+    IsResizable="False">
 
     <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base"/>

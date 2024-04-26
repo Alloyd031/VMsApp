@@ -70,12 +70,12 @@ namespace VMsApp.VMSettingsPages
         }
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new NotAvailableWindow();
+            m_window = new FeatureNotAvailable();
             m_window.Activate();
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new NotAvailableWindow();
+            m_window = new FeatureNotAvailable();
             m_window.Activate();
         }
     }

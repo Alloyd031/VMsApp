@@ -12,14 +12,15 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using VMsApp.NewVMWizardPages;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics;
 using WinUIEx;
 
-namespace VMsApp.Dialogs
+namespace VMsApp.Wizards
 {
-    public sealed partial class MessageLog : WindowEx
+    public sealed partial class NewVMWizard : WindowEx
     {
         [DllImport("User32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern bool GetCursorPos(out Windows.Graphics.PointInt32 lpPoint);
@@ -27,13 +28,14 @@ namespace VMsApp.Dialogs
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-        private Window m_window;
-        public MessageLog()
+        public NewVMWizard()
         {
-            this.InitializeComponent();
+            this.InitializeComponent(); 
             ExtendsContentIntoTitleBar = true;
-            AppWindow.Resize(new SizeInt32(440, 500));
+            AppWindow.Resize(new SizeInt32(550, 550));
             this.CenterOnScreen();
+
+            this.ContentFrame.Navigate(typeof(Main));
 
             AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Collapsed;
 
@@ -45,24 +47,7 @@ namespace VMsApp.Dialogs
         {
             this.Close();
         }
-        private void RemoveButton_Click(object sender, RoutedEventArgs e)
-        {
-            m_window = new FeatureNotAvailable();
-            m_window.Show();
-        }
-        private void RemoveAllButton_Click(object sender, RoutedEventArgs e)
-        {
-            m_window = new FeatureNotAvailable();
-            m_window.Show();
-        }
-        private void MessageLogTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
-        {
-            //nXWindow = _apw.Position.X;
-            //nYWindow = _apw.Position.Y;
-            ((UIElement)sender).ReleasePointerCaptures();
-            bMoving = false;
-        }
-        private void MessageLogTitleBar_PointerPressed(object sender, PointerRoutedEventArgs e)
+        private void NewVMWizardTitleBar_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             var properties = e.GetCurrentPoint((UIElement)sender).Properties;
             if (properties.IsLeftButtonPressed)
@@ -82,7 +67,14 @@ namespace VMsApp.Dialogs
 
             }
         }
-        private void MessageLogTitleBar_PointerMoved(object sender, PointerRoutedEventArgs e)
+        private void NewVMWizardTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            //nXWindow = _apw.Position.X;
+            //nYWindow = _apw.Position.Y;
+            ((UIElement)sender).ReleasePointerCaptures();
+            bMoving = false;
+        }
+        private void NewVMWizardTitleBar_PointerMoved(object sender, PointerRoutedEventArgs e)
         {
             //Microsoft.UI.Input.PointerPoint pp = e.GetCurrentPoint((UIElement)sender);
             //Point ptElement = new Point(pp.Position.X, pp.Position.Y);
