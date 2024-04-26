@@ -192,7 +192,7 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="HelpButton" Content="Help" Height="35" UseSystemFocusVisuals="False" VerticalAlignment="Center" Click="HelpButton_Click" BorderThickness="2,2,2,2" IsTabStop="False" Margin="0,0,10,0">
+                <Button x:Name="HelpButton" Content="Help" Height="35" UseSystemFocusVisuals="False" VerticalAlignment="Center" BorderThickness="2,2,2,2" IsTabStop="False" Margin="0,0,10,0">
                     <Button.Resources>
                         <ResourceDictionary>
                             <ResourceDictionary.ThemeDictionaries>
