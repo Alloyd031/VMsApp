@@ -47,5 +47,7 @@ namespace VMsApp
         }
 
         public static WindowEx m_window;
+
+        public static WindowEx currentWizardWin;
     }
 }

@@ -78,6 +78,7 @@ namespace VMsApp.TabPages
         {
             var logWin = new NewVMWizard();
             CreateModalWindow(App.m_window, logWin, true, true);
+            App.currentWizardWin = logWin;
         }
     }
 }
