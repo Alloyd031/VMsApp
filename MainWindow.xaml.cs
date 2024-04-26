@@ -24,7 +24,7 @@ namespace VMsApp
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-        private Window m_window;
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -153,13 +153,13 @@ namespace VMsApp
         }
         private void VMSettings_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new VMSettings();
-            m_window.Show();
+            var logWin = new VMSettings();
+            CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void About_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new AboutApp();
-            m_window.Show();
+            var logWin = new AboutApp();
+            CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void Button_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
@@ -196,13 +196,13 @@ namespace VMsApp
         }
         private void MessageLog_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new MessageLog();
-            m_window.Show();
+            var logWin = new MessageLog();
+            CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void VMMessageLog_Click(object sender, RoutedEventArgs e)
         {
-            m_window = new MessageLog();
-            m_window.Show();
+            var logWin = new MessageLog();
+            CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void AppTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
         {

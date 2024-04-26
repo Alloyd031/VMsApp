@@ -27,7 +27,6 @@ namespace VMsApp
     /// </summary>
     public partial class App : Application
     {
-        public static WindowEx MainWindow { get; } = new MainWindow();
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -47,6 +46,6 @@ namespace VMsApp
             m_window.Activate();
         }
 
-        private Window m_window;
+        public static WindowEx m_window;
     }
 }
