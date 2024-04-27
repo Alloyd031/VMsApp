@@ -7,7 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:winex="using:WinUIEx"
     xmlns:pages="using:VMsApp.TabPages"
-    xmlns:wuc="using:WinUICommunity"
     mc:Ignorable="d"
     Title="VMsApp">
 
@@ -21,9 +20,9 @@
                 <StackPanel x:Name="MenuStack" Orientation="Horizontal" HorizontalAlignment="Left">
                     <MenuBar>
                         <MenuBarItem x:Uid="FileMenuString" Title="File" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem Text="New Virtual Machine..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="New Window" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Open..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="New Virtual Machine..." UseSystemFocusVisuals="False" IsTabStop="False" Click="CreateNewVM_Click"/>
+                            <MenuFlyoutItem Text="New Window" UseSystemFocusVisuals="False" IsTabStop="False" Click="NewWindow_Click"/>
+                            <MenuFlyoutItem Text="Open..." UseSystemFocusVisuals="False" IsTabStop="False" Click="Open_Click"/>
                             <MenuFlyoutItem Text="Scan for Virtual Machines..." UseSystemFocusVisuals="False" IsTabStop="False"/>
                             <MenuFlyoutItem Text="Configure Auto Start VMs" UseSystemFocusVisuals="False" IsTabStop="False"/>
                             <MenuFlyoutItem Text="Close Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
@@ -40,7 +39,7 @@
                             <MenuFlyoutItem Text="Paste" UseSystemFocusVisuals="False" IsTabStop="False"/>
                             <MenuFlyoutSeparator/>
                             <MenuFlyoutItem Text="Virtual Network Editor..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem x:Uid="PreferencesItemString" Text="Preferences..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem x:Uid="PreferencesItemString" Text="Preferences..." Click="Preferences_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
                         </MenuBarItem>
                         <MenuBarItem x:Uid="ViewMenuString" Title="View" UseSystemFocusVisuals="False" IsTabStop="False">
                             <MenuFlyoutItem Text="Full Screen" UseSystemFocusVisuals="False" IsTabStop="False"/>

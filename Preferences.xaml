@@ -1,0 +1,124 @@
+<winex:WindowEx
+    x:Class="VMsApp.Preferences"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VMsApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winex="using:WinUIEx"
+    mc:Ignorable="d">
+    
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="Base"/>
+    </Window.SystemBackdrop>
+    
+    <Grid>
+        <Grid x:Name="PreferencesTitleBar" PointerPressed="PreferencesTitleBar_PointerPressed" PointerMoved="PreferencesTitleBar_PointerMoved" PointerReleased="PreferencesTitleBar_PointerReleased" VerticalAlignment="Top" Height="48" Background="Transparent">
+            <Grid>
+                <FontIcon Glyph="&#xE713;" Width="25" Height="25" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"/>
+                <TextBlock Text="Preferences" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="55,0,0,0"/>
+            </Grid>
+            <StackPanel x:Name="TitleBarButtons" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Top">
+                <Button x:Name="CloseButton" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="2" ToolTipService.ToolTip="Close" ToolTipService.Placement="Bottom" Height="38" Width="38" CornerRadius="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,5,0" Click="CloseButton_Click">
+                    <Button.Content>
+                        <FontIcon Glyph="&#xE8BB;" FontSize="10"/>
+                    </Button.Content>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
+                        </ResourceDictionary>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <NavigationView x:Name="PreferencesNavView" IsSettingsVisible="False" Loaded="NavigationView_Loaded" PaneDisplayMode="Left" OpenPaneLength="250" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" ItemInvoked="NavigationView_ItemInvoked" Margin="0,48,0,0">
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="Workspace" Content="Workspace" IsSelected="True">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE821;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Input" Content="Input">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE961;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="HotKeys" Content="Hot Keys">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE84B;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Display" Content="Display">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE770;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Unity" Content="Unity">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE2AE;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="USB" Content="USB">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE88E;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Updates" Content="Updates">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE777;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Feedback" Content="Feedback">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xED15;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Memory" Content="Memory">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE950;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Priority" Content="Priority">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE182;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="Devices" Content="Devices">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE772;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Frame x:Name="PreferencesFrame">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition />
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+        </NavigationView>
+    </Grid>
+</winex:WindowEx>

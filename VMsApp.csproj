@@ -25,6 +25,18 @@
     <None Remove="NewVMWizardPages\OperatingSystem.xaml" />
     <None Remove="NewVMWizardPages\ProcessorConfiguration.xaml" />
     <None Remove="NewVMWizardPages\ReadyToCreate.xaml" />
+    <None Remove="Preferences.xaml" />
+    <None Remove="PreferencesPages\Devices.xaml" />
+    <None Remove="PreferencesPages\Display.xaml" />
+    <None Remove="PreferencesPages\Feedback.xaml" />
+    <None Remove="PreferencesPages\HotKeys.xaml" />
+    <None Remove="PreferencesPages\Input.xaml" />
+    <None Remove="PreferencesPages\Memory.xaml" />
+    <None Remove="PreferencesPages\Priority.xaml" />
+    <None Remove="PreferencesPages\Unity.xaml" />
+    <None Remove="PreferencesPages\Updates.xaml" />
+    <None Remove="PreferencesPages\USB.xaml" />
+    <None Remove="PreferencesPages\Workspace.xaml" />
     <None Remove="TabPages\HomePage.xaml" />
     <None Remove="TabPages\MyComputerPage.xaml" />
     <None Remove="TabPages\SharedVMsPage.xaml" />
@@ -52,9 +64,6 @@
     <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.0.240109" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
-    <PackageReference Include="WinUICommunity.Components" Version="6.7.0" />
-    <PackageReference Include="WinUICommunity.Core" Version="6.7.0" />
-    <PackageReference Include="WinUICommunity.Win2D" Version="6.7.0" />
     <PackageReference Include="WinUIEx" Version="2.3.4" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -70,6 +79,66 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Workspace.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\USB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Updates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Unity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Priority.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Memory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Input.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\HotKeys.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Feedback.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Display.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PreferencesPages\Devices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Preferences.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="NewVMWizardPages\ReadyToCreate.xaml">

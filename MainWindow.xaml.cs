@@ -9,9 +9,11 @@ using Windows.UI.WindowManagement;
 using WinUIEx;
 using Windows.Graphics;
 using VMsApp.Dialogs;
+using VMsApp.Wizards;
 using System.Runtime.InteropServices;
 using Microsoft.UI.Input;
 using Windows.UI.Core;
+using VMsApp.VMSettingsPages;
 
 namespace VMsApp
 {
@@ -24,7 +26,7 @@ namespace VMsApp
         private Microsoft.UI.Windowing.AppWindow _apw;
         private bool bMoving = false;
         private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
-
+        public Window m_window;
         public MainWindow()
         {
             this.InitializeComponent();
@@ -90,16 +92,6 @@ namespace VMsApp
 
         [DllImport("User32.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowLongPtr")]
         private static extern IntPtr SetWindowLongPtr64(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
-        public SolidColorBrush GetSolidColorBrush(string hex)
-        {
-            hex = hex.Replace("#", string.Empty);
-            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
-            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
-            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
-            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
-            SolidColorBrush myBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
-            return myBrush;
-        }
         private void HideLibrary_Click(object sender, RoutedEventArgs e)
         {
             this.LibraryPanel.Visibility = Visibility.Collapsed;
@@ -110,6 +102,21 @@ namespace VMsApp
             {
                 ShowHideLibrary.IsChecked = false;
             }
+        }
+        private void CreateNewVM_Click(object sender, RoutedEventArgs e)
+        {
+            var logWin = new NewVMWizard();
+            CreateModalWindow(App.m_window, logWin, true, true);
+        }
+        private void NewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            m_window = new MainWindow();
+            m_window.Activate();
+        }
+        private void Open_Click(object sender, RoutedEventArgs e)
+        {
+            var logWin = new FeatureNotAvailable();
+            CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void ShowHideLibrary_Click(object sender, RoutedEventArgs e)
         {
@@ -202,6 +209,11 @@ namespace VMsApp
         private void VMMessageLog_Click(object sender, RoutedEventArgs e)
         {
             var logWin = new MessageLog();
+            CreateModalWindow(App.m_window, logWin, true, true);
+        }
+        private void Preferences_Click(object sender, RoutedEventArgs e)
+        {
+            var logWin = new Preferences();
             CreateModalWindow(App.m_window, logWin, true, true);
         }
         private void AppTitleBar_PointerReleased(object sender, PointerRoutedEventArgs e)
