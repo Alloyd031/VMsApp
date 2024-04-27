@@ -107,6 +107,7 @@ namespace VMsApp
         {
             var logWin = new NewVMWizard();
             CreateModalWindow(App.m_window, logWin, true, true);
+            App.currentWizardWin = logWin;
         }
         private void NewWindow_Click(object sender, RoutedEventArgs e)
         {
