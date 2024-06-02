@@ -19,13 +19,6 @@ namespace VMsApp
 {
     public sealed partial class MainWindow : WindowEx
     {
-        [DllImport("User32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        public static extern bool GetCursorPos(out Windows.Graphics.PointInt32 lpPoint);
-        IntPtr hWnd = IntPtr.Zero;
-        IntPtr hWndChild = IntPtr.Zero;
-        private Microsoft.UI.Windowing.AppWindow _apw;
-        private bool bMoving = false;
-        private int nX = 0, nY = 0, nXWindow = 0, nYWindow = 0;
         public Window m_window;
         public MainWindow()
         {
@@ -33,10 +26,6 @@ namespace VMsApp
             ExtendsContentIntoTitleBar = true;
             AppWindow.Resize(new SizeInt32(1404, 916));
             this.CenterOnScreen();
-
-            hWnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
-            Microsoft.UI.WindowId myWndId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hWnd);
-            _apw = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(myWndId);
 
             AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
 
