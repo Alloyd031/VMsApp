@@ -15,7 +15,7 @@
     </Window.SystemBackdrop>
 
     <Grid>
-        <Grid x:Name="AppTitleBar" VerticalAlignment="Top" Height="48" Background="Transparent" PointerReleased="AppTitleBar_PointerReleased" PointerPressed="AppTitleBar_PointerPressed" PointerMoved="AppTitleBar_PointerMoved">
+        <Grid x:Name="AppTitleBar" VerticalAlignment="Top" Height="48" Background="Transparent">
             <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="48">
                 <StackPanel x:Name="MenuStack" Orientation="Horizontal" HorizontalAlignment="Left">
                     <MenuBar>
@@ -220,107 +220,6 @@
                     </SplitButton>
                 </StackPanel>
             </Grid>
-            <StackPanel x:Name="TitleBarButtons" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Top">
-                <Button x:Name="MinimizeButton" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="2" ToolTipService.ToolTip="Minimize" ToolTipService.Placement="Bottom" Height="38" Width="38" CornerRadius="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,0,0" Click="MinimizeButton_Click">
-                    <Button.Content>
-                        <FontIcon Glyph="&#xE921;" FontSize="10"/>
-                    </Button.Content>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-                <Button x:Name="MaximizeButton" UseSystemFocusVisuals="False" IsTabStop="False" ToolTipService.ToolTip="Maximize/Restore" ToolTipService.Placement="Bottom" BorderThickness="2" Height="38" Width="38" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,0" CornerRadius="4" Click="MaximizeButton_Click">
-                    <Button.Content>
-                        <FontIcon x:Name="MaximizeIcon" Glyph="&#xE922;" FontSize="10"/>
-                    </Button.Content>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-                <Button x:Name="CloseButton" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="2" ToolTipService.ToolTip="Close" ToolTipService.Placement="Bottom" Height="38" Width="38" CornerRadius="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,5,0" Click="CloseButton_Click">
-                    <Button.Content>
-                        <FontIcon Glyph="&#xE8BB;" FontSize="10"/>
-                    </Button.Content>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </StackPanel>
         </Grid>
         <Grid x:Name="LibraryPanel" BorderThickness="0,1,1,1" BorderBrush="#7B8088" CornerRadius="0,4,4,0" Width="200" HorizontalAlignment="Left" Margin="0,48,0,32">
             <Grid Height="42" VerticalAlignment="Top" Margin="1,1,1,0">
