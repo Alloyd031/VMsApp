@@ -26,11 +26,10 @@ namespace VMsApp
             ExtendsContentIntoTitleBar = true;
             AppWindow.Resize(new SizeInt32(1404, 916));
             this.CenterOnScreen();
-
-            AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
+            SetTitleBar(AppTitleBar);
 
             this.FolderView.Visibility = Visibility.Collapsed;
-            this.TabsGrid.Margin = new Thickness(201, 48, 0, 32);
+            this.TabsGrid.Margin = new Thickness(201, 88, 0, 32);
 
             if (ShowHideLibrary.IsChecked == false)
             {
@@ -75,7 +74,7 @@ namespace VMsApp
         private void HideLibrary_Click(object sender, RoutedEventArgs e)
         {
             this.LibraryPanel.Visibility = Visibility.Collapsed;
-            this.TabsGrid.Margin = new Thickness(0, 48, 0, 32);
+            this.TabsGrid.Margin = new Thickness(0, 88, 0, 32);
             this.FolderView.Margin = new Thickness(0, 0, 0, 32);
 
             if (ShowHideLibrary.IsChecked == true)
@@ -105,15 +104,15 @@ namespace VMsApp
             if (this.LibraryPanel.Visibility == Visibility.Visible)
             {
                 this.LibraryPanel.Visibility = Visibility.Collapsed;
-                this.TabsGrid.Margin = new Thickness(0, 48, 0, 32);
-                this.FolderView.Margin = new Thickness(0, 48, 0, 32);
+                this.TabsGrid.Margin = new Thickness(0, 88, 0, 32);
+                this.FolderView.Margin = new Thickness(0, 0, 0, 32);
                 ShowHideLibrary.IsChecked = false;
             }
             else
             {
                 this.LibraryPanel.Visibility = Visibility.Visible;
-                this.TabsGrid.Margin = new Thickness(201, 48, 0, 32);
-                this.FolderView.Margin = new Thickness(202, 48, 0, 32);
+                this.TabsGrid.Margin = new Thickness(201, 88, 0, 32);
+                this.FolderView.Margin = new Thickness(202, 0, 0, 32);
                 ShowHideLibrary.IsChecked = true;
             }
         }
