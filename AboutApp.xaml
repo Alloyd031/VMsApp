@@ -41,23 +41,26 @@
                 </Border>
             </StackPanel>
         </Grid>
-        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
-                <FontIcon Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock x:Uid="ProductInfoString" Text="Product Information:" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,0,0,0"/>
-                <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0" Width="300">
-                    <TextBlock Text="VMsApp" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <TextBlock Text="Version: 0.1 Preview" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,32,0,0"/>
-                </Grid>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="12,40,0,0">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock x:Uid="ProductInfoString" Text="Product Information" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="SemiBold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <StackPanel Orientation="Horizontal" Padding="4,20,0,0">
+                    <Image Source="ms-appx:///Assets/Square44x44Logo.png" Height="64" Width="64" VerticalAlignment="Center"/>
+                    <Grid Margin="0,45,0,0" VerticalAlignment="Center">
+                        <TextBlock Text="VMsApp" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBlock Text="0.1 Preview" Style="{StaticResource CaptionTextBlockStyle}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,32,0,0"/>
+                    </Grid>
+                </StackPanel>
             </Grid>
             <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,132,0,0">
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <FontIcon Glyph="&#xE125;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                    <TextBlock x:Uid="CreatorString" Text="Creator:" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0"/>
+                    <TextBlock x:Uid="CreatorString" Text="Developers" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="SemiBold" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 </Grid>
-                <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,54,0,0">
-                    <TextBlock Text="Alloyd" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                </Grid>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,54,0,0">
+                    <TextBlock Text="Alloyd" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock Text="ErrorTek" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock Text="Ivirius" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </StackPanel>
             </Grid>
         </Grid>
         <Grid x:Name="BottomItems" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
