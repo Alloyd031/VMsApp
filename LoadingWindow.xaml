@@ -3,12 +3,23 @@
     x:Class="VMsApp.LoadingWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:VMsApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winuiex="using:WinUIEx"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d">
-
     <Grid>
-
+        <Image Source="ms-appx:///Assets/Square44x44Logo.png" Width="125" HorizontalAlignment="Left" Margin="50"/>
+        <StackPanel Margin="225, 45, 0, 0">
+            <TextBlock Text="VMsApp" FontSize="22"/>
+            <TextBlock Text="Modern virtualization software" Margin="0, 15, 0, 0"/>
+            <TextBlock Text="Developed by the VMsApp devs"/>
+            <TextBlock Text="0.1 PREVIEW"/>
+            <TextBlock Text="Compilation date" x:Name="CompilationText"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="Made with the Windows App SDK"/>
+            <TextBlock Text="Loading..." Margin="0, 15, 0, 0"/>
+        </StackPanel>
+        <ProgressRing HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25"/>
     </Grid>
 </Window>

@@ -1,31 +1,55 @@
+using Microsoft.UI.Composition;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Documents;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using System.Reflection;
+using System.Threading.Tasks;
+using WinUIEx;
 
 namespace VMsApp
 {
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class LoadingWindow : Window
     {
         public LoadingWindow()
         {
             this.InitializeComponent();
+            this.SetWindowSize(550, 300);
+            this.ExtendsContentIntoTitleBar = true;
+            this.SetIsMinimizable(false);
+            this.SetIsResizable(false);
+            this.SetIsMaximizable(false);
+            this.CenterOnScreen();
+            this.SetIsAlwaysOnTop(true);
+            //this.BringToFront();
+            //WindowHelper.RemoveIcon(this);
+            this.AppWindow.TitleBar.PreferredHeightOption = Microsoft.UI.Windowing.TitleBarHeightOption.Collapsed;
+            try
+            {
+                this.AppWindow.SetIcon($"{AppContext.BaseDirectory}/Assets/AppIcons/AppIcon.png");
+            }
+            catch
+            {
+
+            }
+            this.Title = "Loading...";
+
+            CompilationText.Text = "Compilation date " + GetBuildDate(Assembly.GetExecutingAssembly());
+
+            Run();
+        }
+
+        private static DateTime GetBuildDate(Assembly assembly)
+        {
+            //var attribute = assembly.GetCustomAttribute<BuildDateAttribute>();
+            //return attribute != null ? attribute.DateTime : default(DateTime);
+            return DateTime.Now;
+        }
+
+        public async void Run()
+        {
+            await Task.Delay(1000);
+
+            this.Close();
         }
     }
 }
