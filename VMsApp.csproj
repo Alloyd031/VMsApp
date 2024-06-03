@@ -17,6 +17,7 @@
     <None Remove="AboutApp.xaml" />
     <None Remove="Dialogs\FeatureNotAvailable.xaml" />
     <None Remove="Dialogs\MessageLog.xaml" />
+    <None Remove="LoadingWindow.xaml" />
     <None Remove="NewVMWizardPages\Compatibility.xaml" />
     <None Remove="NewVMWizardPages\DiskCapacity.xaml" />
     <None Remove="NewVMWizardPages\Installation.xaml" />
@@ -79,6 +80,11 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LoadingWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="PreferencesPages\Workspace.xaml">
