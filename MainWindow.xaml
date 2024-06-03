@@ -16,211 +16,243 @@
 
     <Grid>
         <Grid x:Name="AppTitleBar" VerticalAlignment="Top" Height="48" Background="Transparent">
-            <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="48">
-                <StackPanel x:Name="MenuStack" Orientation="Horizontal" HorizontalAlignment="Left">
-                    <MenuBar>
-                        <MenuBarItem x:Uid="FileMenuString" Title="File" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem Text="New Virtual Machine..." UseSystemFocusVisuals="False" IsTabStop="False" Click="CreateNewVM_Click"/>
-                            <MenuFlyoutItem Text="New Window" UseSystemFocusVisuals="False" IsTabStop="False" Click="NewWindow_Click"/>
-                            <MenuFlyoutItem Text="Open..." UseSystemFocusVisuals="False" IsTabStop="False" Click="Open_Click"/>
-                            <MenuFlyoutItem Text="Scan for Virtual Machines..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Configure Auto Start VMs" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Close Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem x:Uid="VirtualizePhysicalMachineItemString" Text="Virtualize a Physical Machine..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Connect to Server..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Export to OVF..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Exit" Click="Exit_Click" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                        </MenuBarItem>
-                        <MenuBarItem x:Uid="EditMenuString" Title="Edit" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem Text="Cut" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Copy" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Paste" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Virtual Network Editor..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem x:Uid="PreferencesItemString" Text="Preferences..." Click="Preferences_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                        </MenuBarItem>
-                        <MenuBarItem x:Uid="ViewMenuString" Title="View" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem Text="Full Screen" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Unity" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Console View" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Fit Guest Now" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Fit Window Now" UseSystemFocusVisuals="False" IsTabStop="False">
-                            </MenuFlyoutItem>
-                            <MenuFlyoutSubItem Text="Autosize" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <RadioMenuFlyoutItem Text="Autofit Guest" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <RadioMenuFlyoutItem Text="Center Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <ToggleMenuFlyoutItem Text="Autofit Window" IsChecked="True" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutSubItem Text="Customize" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <ToggleMenuFlyoutItem Text="Library" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <ToggleMenuFlyoutItem Text="Thumbnail Bar" IsChecked="True"  UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <ToggleMenuFlyoutItem Text="Toolbar" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <ToggleMenuFlyoutItem Text="Tabs" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <ToggleMenuFlyoutItem Text="Status Bar" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutSubItem Text="Thumbnail Bar Options" UseSystemFocusVisuals="False" IsTabStop="False">
-                                    <RadioMenuFlyoutItem Text="Open Virtual Machines" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                    <RadioMenuFlyoutItem Text="Folder View Virtual Machines" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                </MenuFlyoutSubItem>
-                            </MenuFlyoutSubItem>
-                        </MenuBarItem>
-                        <MenuBarItem x:Uid="VMMenuString" Title="VM" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutSubItem Text="Power" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutItem Text="Start Up Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Shut Down Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Suspend Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Restart Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Power On" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Power Off" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Suspend" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Reset" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Power On to Firmware" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSubItem Text="Removable Devices" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutSubItem Text="CD/DVD (IDE)" UseSystemFocusVisuals="False" IsTabStop="False">
-                                    <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                    <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                </MenuFlyoutSubItem>
-                                <MenuFlyoutSubItem Text="Network Adapter" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
-                                    <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                    <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                </MenuFlyoutSubItem>
-                                <MenuFlyoutSubItem Text="Sound Card" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
-                                    <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                    <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                </MenuFlyoutSubItem>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutItem Text="Pause" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Send Ctrl+Alt+Del" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Grab Input" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutSubItem Text="Snapshot"  UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutItem Text="Take Snapshot..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Revert to Snapshot" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Snapshot Manager" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutItem Text="Capture Screen" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutSubItem Text="Manage" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutItem Text="Change Hardware Compatibility..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Clone..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Upload..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Download..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Clean Up Disks..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Delete from Disk" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Permissions..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="VNC Connections" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Message Log" Click="VMMessageLog_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutItem Text="Install VMsTools..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Settings..." Click="VMSettings_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                        </MenuBarItem>
-                        <MenuBarItem x:Uid="TabsMenuString" Title="Tabs" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem x:Name="GoToHome" Text="Go to Home Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Next Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Previous Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                        </MenuBarItem>
-                        <MenuBarItem x:Uid="HelpMenuString" Title="Help" UseSystemFocusVisuals="False" IsTabStop="False">
-                            <MenuFlyoutItem Text="Help Topics" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Online Documentaion" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSubItem Text="Support" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutItem Text="Online Community" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Product Support Center" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Submit Support Request" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Collect Support Data..." UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutSubItem Text="Hints" UseSystemFocusVisuals="False" IsTabStop="False">
-                                <MenuFlyoutItem Text="Enable All Hints" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <ToggleMenuFlyoutItem Text="Show Enabled Hints" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem Text="Enter a License Key" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Register VMsApp" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutItem Text="Software Updates" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem x:Uid="AboutItemString" Text="About VMsApp" Click="About_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                        </MenuBarItem>
-                    </MenuBar>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <SplitButton x:Name="VMPower" Background="Transparent" Height="38" BorderBrush="Transparent" ToolTipService.ToolTip="Start up this guest operating system" UseSystemFocusVisuals="False" IsTabStop="False" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
-                        <FontIcon Glyph="&#xE102;" FontSize="15"/>
-                        <SplitButton.Flyout>
-                            <MenuFlyout Placement="BottomEdgeAlignedLeft">
-                                <MenuFlyoutItem Text="Start Up Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Shut Down Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Suspend Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Restart Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Power On" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Power Off" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Suspend" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Reset" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutSeparator/>
-                                <MenuFlyoutItem Text="Power On to Firmware" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyout>
-                        </SplitButton.Flyout>
-                    </SplitButton>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <Button x:Name="SendCtrlAltDel" ToolTipService.ToolTip="Send Ctrl+Alt+Del to this virtual machine" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xF5AC;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </Button>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <Button ToolTipService.ToolTip="Take a snapshot of this virtual machine" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE109;" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Height="38" Width="38"/>
-                    </Button>
-                    <Button ToolTipService.ToolTip="Revert this virtual machine to its parent snapshot" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xF738;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </Button>
-                    <Button ToolTipService.ToolTip="Manage snapshots for this virtual machine" Margin="1,0,0,0" Height="38" Width="38" Background="Transparent" BorderBrush="Transparent" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xF739;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </Button>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <ToggleButton x:Name="ShowHideLibrary" ToolTipService.ToolTip="Show or hide library" Background="Transparent" BorderBrush="Transparent" Click="ShowHideLibrary_Click" Height="38" Width="38" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE90C;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </ToggleButton>
-                    <ToggleButton x:Name="ShowHideFolderView" Margin="1,0,0,0" ToolTipService.ToolTip="Show or hide thumbnail bar" Click="ShowHideFolderView_Click" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE90E;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </ToggleButton>
-                    <ToggleButton ToolTipService.ToolTip="Enter full screen mode" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE1D9;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </ToggleButton>
-                    <ToggleButton ToolTipService.ToolTip="Enter Unity mode" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE2AE;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </ToggleButton>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <ToggleButton ToolTipService.ToolTip="Show or hide console view" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
-                        <FontIcon Glyph="&#xE756;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
-                    </ToggleButton>
-                    <AppBarSeparator HorizontalAlignment="Left"/>
-                    <SplitButton ToolTipService.ToolTip="Free stretch / Keep aspect ratio stretch" Background="Transparent" BorderBrush="Transparent" Height="38" UseSystemFocusVisuals="False" IsTabStop="False">
-                        <FontIcon Glyph="&#xE2B4;" FontSize="15"/>
-                        <SplitButton.Flyout>
-                            <MenuFlyout Placement="BottomEdgeAlignedLeft">
-                                <MenuFlyoutItem Text="Keep aspect ratio stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                                <MenuFlyoutItem Text="Free stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
-                            </MenuFlyout>
-                        </SplitButton.Flyout>
-                    </SplitButton>
-                </StackPanel>
-            </Grid>
+            <StackPanel x:Name="TitleBar" Orientation="Horizontal">
+                <Border
+                x:Name="AppTitleBar"
+                Height="40"
+                Margin="12,2,0,0"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                Canvas.ZIndex="1"
+                IsHitTestVisible="True"
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignRightWithPanel="True">
+                    <StackPanel Orientation="Horizontal" Width="Auto">
+                        <Image
+                        x:Name="AppFontIcon"
+                        Width="24"
+                        Height="24"
+                        Margin="0,2,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="ms-appx:///Assets/Square44x44Logo.png" />
+                        <TextBlock
+                        x:Name="AppTitle"
+                        Margin="12,2,4,0"
+                        VerticalAlignment="Center"
+                        Text="VMsApp"
+                        FontSize="12"
+                        FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
         </Grid>
+        <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="48">
+            <StackPanel x:Name="MenuStack" Orientation="Horizontal" HorizontalAlignment="Left">
+                <MenuBar>
+                    <MenuBarItem x:Uid="FileMenuString" Title="File" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutItem Text="New Virtual Machine..." UseSystemFocusVisuals="False" IsTabStop="False" Click="CreateNewVM_Click"/>
+                        <MenuFlyoutItem Text="New Window" UseSystemFocusVisuals="False" IsTabStop="False" Click="NewWindow_Click"/>
+                        <MenuFlyoutItem Text="Open..." UseSystemFocusVisuals="False" IsTabStop="False" Click="Open_Click"/>
+                        <MenuFlyoutItem Text="Scan for Virtual Machines..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Configure Auto Start VMs" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Close Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem x:Uid="VirtualizePhysicalMachineItemString" Text="Virtualize a Physical Machine..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Connect to Server..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Export to OVF..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Exit" Click="Exit_Click" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                    </MenuBarItem>
+                    <MenuBarItem x:Uid="EditMenuString" Title="Edit" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutItem Text="Cut" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Copy" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Paste" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Virtual Network Editor..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem x:Uid="PreferencesItemString" Text="Preferences..." Click="Preferences_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                    </MenuBarItem>
+                    <MenuBarItem x:Uid="ViewMenuString" Title="View" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutItem Text="Full Screen" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Unity" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Console View" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Fit Guest Now" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Fit Window Now" UseSystemFocusVisuals="False" IsTabStop="False">
+                        </MenuFlyoutItem>
+                        <MenuFlyoutSubItem Text="Autosize" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <RadioMenuFlyoutItem Text="Autofit Guest" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <RadioMenuFlyoutItem Text="Center Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <ToggleMenuFlyoutItem Text="Autofit Window" IsChecked="True" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutSubItem Text="Customize" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <ToggleMenuFlyoutItem Text="Library" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <ToggleMenuFlyoutItem Text="Thumbnail Bar" IsChecked="True"  UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <ToggleMenuFlyoutItem Text="Toolbar" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <ToggleMenuFlyoutItem Text="Tabs" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <ToggleMenuFlyoutItem Text="Status Bar" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutSubItem Text="Thumbnail Bar Options" UseSystemFocusVisuals="False" IsTabStop="False">
+                                <RadioMenuFlyoutItem Text="Open Virtual Machines" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                                <RadioMenuFlyoutItem Text="Folder View Virtual Machines" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            </MenuFlyoutSubItem>
+                        </MenuFlyoutSubItem>
+                    </MenuBarItem>
+                    <MenuBarItem x:Uid="VMMenuString" Title="VM" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutSubItem Text="Power" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutItem Text="Start Up Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Shut Down Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Suspend Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Restart Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Power On" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Power Off" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Suspend" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Reset" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Power On to Firmware" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSubItem Text="Removable Devices" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutSubItem Text="CD/DVD (IDE)" UseSystemFocusVisuals="False" IsTabStop="False">
+                                <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                                <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="Network Adapter" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
+                                <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                                <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="Sound Card" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
+                                <MenuFlyoutItem Text="Disconnect" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                                <MenuFlyoutItem Text="Settings..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            </MenuFlyoutSubItem>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutItem Text="Pause" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Send Ctrl+Alt+Del" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Grab Input" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutSubItem Text="Snapshot"  UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutItem Text="Take Snapshot..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Revert to Snapshot" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Snapshot Manager" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutItem Text="Capture Screen" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutSubItem Text="Manage" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutItem Text="Change Hardware Compatibility..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Clone..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Upload..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Download..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Clean Up Disks..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Delete from Disk" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Permissions..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="VNC Connections" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Message Log" Click="VMMessageLog_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutItem Text="Install VMsTools..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Settings..." Click="VMSettings_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                    </MenuBarItem>
+                    <MenuBarItem x:Uid="TabsMenuString" Title="Tabs" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutItem x:Name="GoToHome" Text="Go to Home Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Next Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Previous Tab" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                    </MenuBarItem>
+                    <MenuBarItem x:Uid="HelpMenuString" Title="Help" UseSystemFocusVisuals="False" IsTabStop="False">
+                        <MenuFlyoutItem Text="Help Topics" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Online Documentaion" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSubItem Text="Support" CornerRadius="0" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutItem Text="Online Community" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Product Support Center" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Submit Support Request" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Collect Support Data..." UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutSubItem Text="Hints" UseSystemFocusVisuals="False" IsTabStop="False">
+                            <MenuFlyoutItem Text="Enable All Hints" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <ToggleMenuFlyoutItem Text="Show Enabled Hints" IsChecked="True" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="Enter a License Key" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Register VMsApp" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutItem Text="Software Updates" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem x:Uid="AboutItemString" Text="About VMsApp" Click="About_Click" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                    </MenuBarItem>
+                </MenuBar>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <SplitButton x:Name="VMPower" Background="Transparent" Height="38" BorderBrush="Transparent" ToolTipService.ToolTip="Start up this guest operating system" UseSystemFocusVisuals="False" IsTabStop="False" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                    <FontIcon Glyph="&#xE102;" FontSize="15"/>
+                    <SplitButton.Flyout>
+                        <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                            <MenuFlyoutItem Text="Start Up Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Shut Down Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Suspend Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Restart Guest" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Power On" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Power Off" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Suspend" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Reset" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Power On to Firmware" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyout>
+                    </SplitButton.Flyout>
+                </SplitButton>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <Button x:Name="SendCtrlAltDel" ToolTipService.ToolTip="Send Ctrl+Alt+Del to this virtual machine" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xF5AC;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </Button>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <Button ToolTipService.ToolTip="Take a snapshot of this virtual machine" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE109;" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Height="38" Width="38"/>
+                </Button>
+                <Button ToolTipService.ToolTip="Revert this virtual machine to its parent snapshot" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xF738;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </Button>
+                <Button ToolTipService.ToolTip="Manage snapshots for this virtual machine" Margin="1,0,0,0" Height="38" Width="38" Background="Transparent" BorderBrush="Transparent" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xF739;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </Button>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <ToggleButton x:Name="ShowHideLibrary" ToolTipService.ToolTip="Show or hide library" Background="Transparent" BorderBrush="Transparent" Click="ShowHideLibrary_Click" Height="38" Width="38" UseSystemFocusVisuals="False" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE90C;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </ToggleButton>
+                <ToggleButton x:Name="ShowHideFolderView" Margin="1,0,0,0" ToolTipService.ToolTip="Show or hide thumbnail bar" Click="ShowHideFolderView_Click" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE90E;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </ToggleButton>
+                <ToggleButton ToolTipService.ToolTip="Enter full screen mode" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE1D9;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </ToggleButton>
+                <ToggleButton ToolTipService.ToolTip="Enter Unity mode" Margin="1,0,0,0" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE2AE;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </ToggleButton>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <ToggleButton ToolTipService.ToolTip="Show or hide console view" Height="38" Width="38" UseSystemFocusVisuals="False" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsTabStop="False">
+                    <FontIcon Glyph="&#xE756;" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="38"/>
+                </ToggleButton>
+                <AppBarSeparator HorizontalAlignment="Left"/>
+                <SplitButton ToolTipService.ToolTip="Free stretch / Keep aspect ratio stretch" Background="Transparent" BorderBrush="Transparent" Height="38" UseSystemFocusVisuals="False" IsTabStop="False">
+                    <FontIcon Glyph="&#xE2B4;" FontSize="15"/>
+                    <SplitButton.Flyout>
+                        <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                            <MenuFlyoutItem Text="Keep aspect ratio stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                            <MenuFlyoutItem Text="Free stretch" UseSystemFocusVisuals="False" IsTabStop="False"/>
+                        </MenuFlyout>
+                    </SplitButton.Flyout>
+                </SplitButton>
+            </StackPanel>
+        </Grid>
+
         <Grid x:Name="LibraryPanel" BorderThickness="0,1,1,1" BorderBrush="#7B8088" CornerRadius="0,4,4,0" Width="200" HorizontalAlignment="Left" Margin="0,48,0,32">
             <Grid Height="42" VerticalAlignment="Top" Margin="1,1,1,0">
                 <TextBlock x:Uid="LibraryString" Style="{StaticResource CaptionTextBlockStyle}" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Library" TextAlignment="Center" Margin="8,0,0,0"/>
