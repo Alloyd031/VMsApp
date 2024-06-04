@@ -30,8 +30,8 @@
                     </ComboBox.Items>
                 </ComboBox>
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,47,0,0">
-                    <FontIcon Glyph="&#xE946;" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="0,-8,0,0"/>
-                    <TextBlock Text="Change this option if you have trouble with mouse motion in some applications." FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,-9,0,0"/>
+                    <FontIcon Glyph="&#xE946;" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="0,0,0,0"/>
+                    <TextBlock Text="Change this option if you have trouble with mouse motion in some applications." FontSize="16" HorizontalAlignment="Left" Width="550" TextWrapping="Wrap" VerticalAlignment="Top" Margin="25,0,0,0"/>
                 </Grid>
             </Grid>
         </StackPanel>

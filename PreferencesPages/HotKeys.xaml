@@ -11,7 +11,7 @@
         <StackPanel Padding="10,0,0,0">
             <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
                 <TextBlock Text="Hot key combination" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" FontSize="20"/>
-                <TextBlock Text="Hot keys provide a shortcut to commonly-used virtual machine operations. Click the buttons below to modify your hot keys." HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="0,24,0,0" TextWrapping="Wrap" Width="600"/>
+                <TextBlock Text="Hot keys provide a shortcut to commonly-used virtual machine operations. Click the buttons below to modify your hot keys." HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="0,24,0,0" TextWrapping="Wrap" Width="550"/>
                 <ToggleButton Content="Ctrl" IsChecked="True" Margin="0,72,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" FontSize="16"/>
                 <ToggleButton Content="Shift" Margin="54,72,0,0" VerticalAlignment="Top" UseSystemFocusVisuals="False" FontSize="16"/>
                 <ToggleButton Content="Alt" IsChecked="True" Margin="115,72,0,0" UseSystemFocusVisuals="False" VerticalAlignment="Top" FontSize="16"/>
