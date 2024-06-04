@@ -14,6 +14,12 @@
 	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Enums\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="Enums\**" />
+    <Page Remove="Enums\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="AboutApp.xaml" />
     <None Remove="Dialogs\FeatureNotAvailable.xaml" />
     <None Remove="Dialogs\MessageLog.xaml" />
@@ -38,6 +44,7 @@
     <None Remove="PreferencesPages\Updates.xaml" />
     <None Remove="PreferencesPages\USB.xaml" />
     <None Remove="PreferencesPages\Workspace.xaml" />
+    <None Remove="Styles\NavigationViewItemButtonStyle.xaml" />
     <None Remove="TabPages\HomePage.xaml" />
     <None Remove="TabPages\MyComputerPage.xaml" />
     <None Remove="TabPages\SharedVMsPage.xaml" />
@@ -65,6 +72,10 @@
     <PackageReference Include="HyperV.NET" Version="1.1.0" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240428000" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="WinUICommunity.Components" Version="6.8.0" />
+    <PackageReference Include="WinUICommunity.Core" Version="6.8.0" />
+    <PackageReference Include="WinUICommunity.Win2D" Version="6.8.0" />
     <PackageReference Include="WinUIEx" Version="2.3.4" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -265,4 +276,12 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <ItemGroup>
+    <PRIResource Remove="Enums\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\NavigationViewItemButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
 </Project>

@@ -41,6 +41,15 @@ RelativePanel.AlignRightWithPanel="True">
             </StackPanel>
         </Grid>
         <NavigationView x:Name="PreferencesNavView" IsSettingsVisible="False" Loaded="NavigationView_Loaded" PaneDisplayMode="Left" OpenPaneLength="250" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" ItemInvoked="NavigationView_ItemInvoked" Margin="0,40,0,0">
+            <NavigationView.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="ms-appx:///Styles/NavigationViewItemButtonStyle.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                    <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent" />
+                    <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent" />
+                </ResourceDictionary>
+            </NavigationView.Resources>
             <NavigationView.MenuItems>
                 <NavigationViewItem x:Name="Workspace" Content="Workspace" IsSelected="True">
                     <NavigationViewItem.Icon>
