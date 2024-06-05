@@ -16,7 +16,7 @@
             </Grid>
             <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
                 <TextBlock Text="Virtual printer" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" FontSize="20"/>
-                <TextBlock Text="The virtual printer device allows a virtual machine with UWPTools to print to any printers configured on your host." Width="530" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="0,32,0,0"/>
+                <TextBlock Text="The virtual printer device allows a virtual machine with VMsTools to print to any printers configured on your host." Width="530" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="0,32,0,0"/>
                 <CheckBox x:Name="EnablePrinters" Content="Enable virtual printers" IsChecked="True" FontSize="16" IsEnabled="False" VerticalAlignment="Bottom" Margin="0,0,0,1" IsTabStop="False" UseSystemFocusVisuals="False"/>
                 <Button x:Name="ChangeSettingsButton" Content="Change settings" FontSize="16" VerticalAlignment="Top" Margin="187,87,0,0" IsTabStop="False" UseSystemFocusVisuals="False"/>
             </Grid>
