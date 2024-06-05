@@ -46,10 +46,11 @@
                 <TextBlock x:Uid="ProductInfoString" Text="Product Information" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="SemiBold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <StackPanel Orientation="Horizontal" Padding="4,20,0,0">
                     <Image Source="ms-appx:///Assets/Square44x44Logo.png" Height="64" Width="64" VerticalAlignment="Center"/>
-                    <Grid Margin="0,45,0,0" VerticalAlignment="Center">
+                    <StackPanel Margin="0,45,0,0" VerticalAlignment="Center">
                         <TextBlock Text="VMsApp" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                        <TextBlock Text="0.1 Preview" Style="{StaticResource CaptionTextBlockStyle}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,32,0,0"/>
-                    </Grid>
+                        <TextBlock Text="0.1 Preview" Style="{StaticResource CaptionTextBlockStyle}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBlock Text="Compilation date" x:Name="CompileDate" Style="{StaticResource CaptionTextBlockStyle}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
             <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,132,0,0">

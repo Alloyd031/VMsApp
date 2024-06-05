@@ -18,6 +18,7 @@ using Microsoft.UI;
 using WinUIEx;
 using WinUIEx.Messaging;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace VMsApp
 {
@@ -31,6 +32,7 @@ namespace VMsApp
             AppWindow.Resize(new SizeInt32(647, 458));
             this.CenterOnScreen();
             SetTitleBar(AboutWindowTitleBar);
+            CompileDate.Text = "Compilation date " + GetBuildDate(Assembly.GetExecutingAssembly());
 
             _msgMonitor = new WindowMessageMonitor(this);
             _msgMonitor.WindowMessageReceived += (_, e) =>
@@ -44,6 +46,13 @@ namespace VMsApp
                 }
             };
         }
+
+        private static DateTime GetBuildDate(Assembly assembly)
+        {
+            var attribute = assembly.GetCustomAttribute<BuildDateAttribute>();
+            return attribute != null ? attribute.DateTime : default(DateTime);
+        }
+
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

@@ -62,6 +62,12 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
 
+	<ItemGroup>
+		<AssemblyAttribute Include="VMsApp.BuildDateAttribute">
+			<_Parameter1>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.1.240328-rc" />
     <PackageReference Include="HyperV.NET" Version="1.1.0" />

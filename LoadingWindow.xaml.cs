@@ -40,9 +40,8 @@ namespace VMsApp
 
         private static DateTime GetBuildDate(Assembly assembly)
         {
-            //var attribute = assembly.GetCustomAttribute<BuildDateAttribute>();
-            //return attribute != null ? attribute.DateTime : default(DateTime);
-            return DateTime.Now;
+            var attribute = assembly.GetCustomAttribute<BuildDateAttribute>();
+            return attribute != null ? attribute.DateTime : default(DateTime);
         }
 
         public async void Run()
