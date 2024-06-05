@@ -24,7 +24,7 @@ namespace VMsApp
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
-            AppWindow.Resize(new SizeInt32(1404, 916));
+            AppWindow.Resize(new SizeInt32(1200, 700));
             this.CenterOnScreen();
             SetTitleBar(AppTitleBar);
 

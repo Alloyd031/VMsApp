@@ -9,55 +9,40 @@
     xmlns:vmsettings="using:VMsApp.VMSettingsPages"
     mc:Ignorable="d"
     Title="VM Settings"
-    IsResizable="False">
+    IsResizable="False"
+    IsMaximizable="False"
+    IsMinimizable="False">
 
     <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base"/>
     </Window.SystemBackdrop>
 
     <Grid>
-        <Grid x:Name="VMSettingsTitleBar" Background="Transparent" Height="48" VerticalAlignment="Top" PointerPressed="VMSettingsTitleBar_PointerPressed" PointerReleased="VMSettingsTitleBar_PointerReleased" PointerMoved="VMSettingsTitleBar_PointerMoved">
-            <Grid>
-                <FontIcon Glyph="&#xE713;" Width="25" Height="25" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"/>
-                <TextBlock Text="VM Settings" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="55,0,0,0"/>
-            </Grid>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
-                <Button x:Name="CloseButton" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="2" ToolTipService.ToolTip="Close" ToolTipService.Placement="Bottom" Height="38" Width="38" CornerRadius="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,5,0" Click="CloseButton_Click">
-                    <Button.Content>
-                        <FontIcon Glyph="&#xE8BB;" FontSize="10"/>
-                    </Button.Content>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
+        <Grid x:Name="VMSettingsWindowTitleBar" Background="Transparent" Height="40" VerticalAlignment="Top">
+            <StackPanel x:Name="TitleBar" Orientation="Horizontal">
+                <Border             
+Height="40"
+Margin="12,2,0,0"
+VerticalAlignment="Top"
+Background="Transparent"
+Canvas.ZIndex="1"
+IsHitTestVisible="True"
+RelativePanel.AlignLeftWithPanel="True"
+RelativePanel.AlignRightWithPanel="True">
+                    <StackPanel Orientation="Horizontal" Width="Auto">
+                        <FontIcon Glyph="&#xE713;" Width="24" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,2,0,0"/>
+                        <TextBlock
+        x:Name="VMSettingsWindowTitle"
+        Margin="12,2,4,0"
+        VerticalAlignment="Center"
+        Text="VM Settings"
+        FontSize="12"
+        FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
+                    </StackPanel>
+                </Border>
             </StackPanel>
         </Grid>
-        <Pivot Padding="0" Margin="0,48,0,50">
+        <Pivot Padding="0" Margin="0,40,0,50">
             <PivotItem Header="Hardware" Margin="0">
                 <vmsettings:Hardware/>
             </PivotItem>

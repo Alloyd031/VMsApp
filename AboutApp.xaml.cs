@@ -16,12 +16,14 @@ using Windows.Graphics;
 using Microsoft.UI.Windowing;
 using Microsoft.UI;
 using WinUIEx;
+using WinUIEx.Messaging;
 using System.Runtime.InteropServices;
 
 namespace VMsApp
 {
     public sealed partial class AboutApp : WindowEx
     {
+        private WindowMessageMonitor _msgMonitor;
         public AboutApp()
         {
             this.InitializeComponent();
@@ -29,6 +31,18 @@ namespace VMsApp
             AppWindow.Resize(new SizeInt32(647, 458));
             this.CenterOnScreen();
             SetTitleBar(AboutWindowTitleBar);
+
+            _msgMonitor = new WindowMessageMonitor(this);
+            _msgMonitor.WindowMessageReceived += (_, e) =>
+            {
+                const int WM_NCLBUTTONDBLCLK = 0x00A3;
+                if (e.Message.MessageId == WM_NCLBUTTONDBLCLK)
+                {
+                    // Disable double click on title bar to maximize window
+                    e.Result = 0;
+                    e.Handled = true;
+                }
+            };
         }
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {
