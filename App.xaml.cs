@@ -46,6 +46,7 @@ namespace VMsApp
             LoadingWindow loadingwindow = new LoadingWindow();
             m_window = new MainWindow();
             loadingwindow.Show();
+            await Task.Delay(1000);
             m_window.Activate();
         }
 
