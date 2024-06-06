@@ -19,6 +19,7 @@ using WinUIEx;
 using WinUIEx.Messaging;
 using System.Runtime.InteropServices;
 using System.Reflection;
+using Microsoft.UI.Composition.SystemBackdrops;
 
 namespace VMsApp
 {
@@ -30,6 +31,10 @@ namespace VMsApp
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             AppWindow.Resize(new SizeInt32(647, 458));
+            SystemBackdrop = new MicaBackdrop()
+            {
+                Kind = MicaKind.Base
+            };
             this.CenterOnScreen();
             SetTitleBar(AboutWindowTitleBar);
             CompileDate.Text = "Compilation date " + GetBuildDate(Assembly.GetExecutingAssembly());
