@@ -6,8 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:winex="using:WinUIEx"
-    Title="Error"
+    Title="Feature not available"
     IsResizable="False"
+    IsMaximizable="False"
+    IsMinimizable="False"
     mc:Ignorable="d">
     
     <Window.SystemBackdrop>
@@ -15,47 +17,32 @@
     </Window.SystemBackdrop>
 
     <Grid>
-        <Grid x:Name="ErrorWindowTitleBar" Height="48" VerticalAlignment="Top" Background="Transparent" PointerMoved="ErrorWindowTitleBar_PointerMoved" PointerPressed="ErrorWindowTitleBar_PointerPressed" PointerReleased="ErrorWindowTitleBar_PointerReleased">
-            <Grid>
-                <FontIcon Glyph="&#xEA39;" Width="25" Height="25" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"/>
-                <TextBlock Text="Error" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="55,0,0,0"/>
-            </Grid>
-            <StackPanel x:Name="TitleBarButtons" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Top">
-                <Button x:Name="CloseButton" UseSystemFocusVisuals="False" IsTabStop="False" BorderThickness="2" ToolTipService.ToolTip="Close" ToolTipService.Placement="Bottom" Height="38" Width="38" CornerRadius="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,5,0" Click="CloseButton_Click">
-                    <Button.Content>
-                        <FontIcon Glyph="&#xE8BB;" FontSize="10"/>
-                    </Button.Content>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorDark1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="{StaticResource SystemAccentColorLight2}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{StaticResource SystemAccentColorLight1}"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColor}"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="{StaticResource SystemAccentColor}"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </StackPanel>
-        </Grid>
+        <TitleBar x:Name="FeatureNotAvailableTitleBar" Height="40" VerticalAlignment="Top" Background="Transparent">
+            <TitleBar.Header>
+                <StackPanel x:Name="TitleBar" Orientation="Horizontal">
+                    <Border             
+Height="40"
+Margin="12,2,0,0"
+VerticalAlignment="Top"
+Background="Transparent"
+Canvas.ZIndex="1"
+IsHitTestVisible="True"
+RelativePanel.AlignLeftWithPanel="True"
+RelativePanel.AlignRightWithPanel="True">
+                        <StackPanel Orientation="Horizontal" Width="Auto">
+                            <FontIcon Glyph="&#xEA39;" Width="24" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,2,0,0"/>
+                            <TextBlock
+        x:Name="FeatureNotAvailableWindowTitle"
+        Margin="12,2,4,0"
+        VerticalAlignment="Center"
+        Text="Error"
+        FontSize="12"
+        FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </TitleBar.Header>
+        </TitleBar>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
             <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock x:Uid="NotAvailableString" Text="This feature is not available" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>

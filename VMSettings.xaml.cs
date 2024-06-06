@@ -43,6 +43,18 @@ namespace VMsApp
                     e.Handled = true;
                 }
             };
+            VMSettingsWindowTitleBar.Loaded += VMSettingsWindowTitleBar_Loaded;
+        }
+        private void VMSettingsWindowTitleBar_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Parts get delay loaded. If you have the parts, make them visible.
+            VisualStateManager.GoToState(VMSettingsWindowTitleBar, "SubtitleTextVisible", false);
+            VisualStateManager.GoToState(VMSettingsWindowTitleBar, "HeaderVisible", false);
+            VisualStateManager.GoToState(VMSettingsWindowTitleBar, "ContentVisible", false);
+            VisualStateManager.GoToState(VMSettingsWindowTitleBar, "FooterVisible", false);
+
+            // Run layout so we re-calculate the drag regions.
+            VMSettingsWindowTitleBar.InvalidateMeasure();
         }
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {

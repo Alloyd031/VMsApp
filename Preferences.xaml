@@ -16,9 +16,10 @@
     </Window.SystemBackdrop>
     
     <Grid>
-        <Grid x:Name="PreferencesWindowTitleBar" VerticalAlignment="Top" Height="40" Background="Transparent">
-            <StackPanel x:Name="TitleBar" Orientation="Horizontal">
-                <Border             
+        <TitleBar x:Name="PreferencesWindowTitleBar" Height="40" VerticalAlignment="Top" Background="Transparent">
+            <TitleBar.Header>
+                <StackPanel x:Name="TitleBar" Orientation="Horizontal">
+                    <Border             
 Height="40"
 Margin="12,2,0,0"
 VerticalAlignment="Top"
@@ -27,19 +28,20 @@ Canvas.ZIndex="1"
 IsHitTestVisible="True"
 RelativePanel.AlignLeftWithPanel="True"
 RelativePanel.AlignRightWithPanel="True">
-                    <StackPanel Orientation="Horizontal" Width="Auto">
-                        <FontIcon Glyph="&#xE713;" Width="24" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,2,0,0"/>
-                        <TextBlock
+                        <StackPanel Orientation="Horizontal" Width="Auto">
+                            <FontIcon Glyph="&#xE713;" Width="24" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,2,0,0"/>
+                            <TextBlock
         x:Name="PreferencesWindowTitle"
         Margin="12,2,4,0"
         VerticalAlignment="Center"
         Text="Preferences"
         FontSize="12"
         FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
-                    </StackPanel>
-                </Border>
-            </StackPanel>
-        </Grid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </TitleBar.Header>
+        </TitleBar>
         <NavigationView x:Name="PreferencesNavView" IsSettingsVisible="False" Loaded="NavigationView_Loaded" PaneDisplayMode="Left" OpenPaneLength="200" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" ItemInvoked="NavigationView_ItemInvoked" Margin="0,40,0,0">
             <NavigationView.Resources>
                 <ResourceDictionary>

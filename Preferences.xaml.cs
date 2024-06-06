@@ -43,6 +43,18 @@ namespace VMsApp
                     e.Handled = true;
                 }
             };
+            PreferencesWindowTitleBar.Loaded += PreferencesWindowTitleBar_Loaded;
+        }
+        private void PreferencesWindowTitleBar_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Parts get delay loaded. If you have the parts, make them visible.
+            VisualStateManager.GoToState(PreferencesWindowTitleBar, "SubtitleTextVisible", false);
+            VisualStateManager.GoToState(PreferencesWindowTitleBar, "HeaderVisible", false);
+            VisualStateManager.GoToState(PreferencesWindowTitleBar, "ContentVisible", false);
+            VisualStateManager.GoToState(PreferencesWindowTitleBar, "FooterVisible", false);
+
+            // Run layout so we re-calculate the drag regions.
+            PreferencesWindowTitleBar.InvalidateMeasure();
         }
         private void NavigationView_ItemInvoked(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs args)
         {
