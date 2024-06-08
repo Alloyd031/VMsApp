@@ -69,8 +69,9 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.1.240328-rc" />
+    <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.1.240606-rc" />
     <PackageReference Include="HyperV.NET" Version="1.1.0" />
+    <PackageReference Include="Ivirius.UI.Controls" Version="0.0.1-prerelease" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240531000-experimental1" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
