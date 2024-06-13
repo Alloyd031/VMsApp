@@ -28,19 +28,6 @@ namespace VMsApp.Dialogs
             AppWindow.Resize(new SizeInt32(440, 500));
             this.CenterOnScreen();
             SetTitleBar(MessageLogTitleBar);
-
-            MessageLogTitleBar.Loaded += MessageLogTitleBar_Loaded;
-        }
-        private void MessageLogTitleBar_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Parts get delay loaded. If you have the parts, make them visible.
-            VisualStateManager.GoToState(MessageLogTitleBar, "SubtitleTextVisible", false);
-            VisualStateManager.GoToState(MessageLogTitleBar, "HeaderVisible", false);
-            VisualStateManager.GoToState(MessageLogTitleBar, "ContentVisible", false);
-            VisualStateManager.GoToState(MessageLogTitleBar, "FooterVisible", false);
-
-            // Run layout so we re-calculate the drag regions.
-            MessageLogTitleBar.InvalidateMeasure();
         }
     }
 }

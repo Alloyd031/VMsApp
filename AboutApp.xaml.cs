@@ -31,10 +31,7 @@ namespace VMsApp
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             AppWindow.Resize(new SizeInt32(647, 458));
-            SystemBackdrop = new MicaBackdrop()
-            {
-                Kind = MicaKind.Base
-            };
+
             this.CenterOnScreen();
             SetTitleBar(AboutWindowTitleBar);
             CompileDate.Text = "Compilation date " + GetBuildDate(Assembly.GetExecutingAssembly());
@@ -50,19 +47,6 @@ namespace VMsApp
                     e.Handled = true;
                 }
             };
-
-            AboutWindowTitleBar.Loaded += AboutWindowTitleBar_Loaded;
-        }
-        private void AboutWindowTitleBar_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Parts get delay loaded. If you have the parts, make them visible.
-            VisualStateManager.GoToState(AboutWindowTitleBar, "SubtitleTextVisible", false);
-            VisualStateManager.GoToState(AboutWindowTitleBar, "HeaderVisible", false);
-            VisualStateManager.GoToState(AboutWindowTitleBar, "ContentVisible", false);
-            VisualStateManager.GoToState(AboutWindowTitleBar, "FooterVisible", false);
-
-            // Run layout so we re-calculate the drag regions.
-            AboutWindowTitleBar.InvalidateMeasure();
         }
         private static DateTime GetBuildDate(Assembly assembly)
         {

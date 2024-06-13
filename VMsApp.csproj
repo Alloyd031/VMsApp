@@ -72,12 +72,12 @@
     <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.1.240606-rc" />
     <PackageReference Include="HyperV.NET" Version="1.1.0" />
     <PackageReference Include="Ivirius.UI.Controls" Version="0.0.1-prerelease" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240531000-experimental1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240607001" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="WinUICommunity.Components" Version="6.8.0" />
-    <PackageReference Include="WinUICommunity.Core" Version="6.8.0" />
-    <PackageReference Include="WinUICommunity.Win2D" Version="6.8.0" />
+    <PackageReference Include="WinUICommunity.Components" Version="6.9.0" />
+    <PackageReference Include="WinUICommunity.Core" Version="6.9.0" />
+    <PackageReference Include="WinUICommunity.Win2D" Version="6.9.0" />
     <PackageReference Include="WinUIEx" Version="2.3.4" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>

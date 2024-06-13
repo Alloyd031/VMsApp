@@ -11,14 +11,43 @@
     IsResizable="False"
     IsMaximizable="False"
     IsMinimizable="False">
-    
-    <!--<Window.SystemBackdrop>
+
+    <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base"/>
-    </Window.SystemBackdrop>-->
+    </Window.SystemBackdrop>
 
     <Grid>
-        <TitleBar x:Name="AboutWindowTitleBar" Height="40" VerticalAlignment="Top" Title="About App" Subtitle="VMsApp">
-        </TitleBar>
+        <Grid x:Name="AboutWindowTitleBar" Height="40" VerticalAlignment="Top" Background="Transparent">
+            <StackPanel x:Name="TitleBar" Orientation="Horizontal" Background="Transparent">
+                <Border             
+                Height="40"
+                Margin="12,2,0,0"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                Canvas.ZIndex="1"
+                IsHitTestVisible="True"
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignRightWithPanel="True">
+                    <StackPanel Orientation="Horizontal" Width="Auto">
+                        <FontIcon
+                        x:Name="AppFontIcon"
+                        Width="24"
+                        Height="24"
+                        Margin="0,2,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Glyph="&#xE946;" />
+                        <TextBlock
+                        x:Name="AppTitle"
+                        Margin="12,2,4,0"
+                        VerticalAlignment="Center"
+                        Text="About App"
+                        FontSize="12"
+                        FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
         <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="12,40,0,0">
             <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
                 <TextBlock x:Uid="ProductInfoString" Text="Product Information" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="SemiBold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>

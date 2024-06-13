@@ -35,18 +35,6 @@ namespace VMsApp
             {
                 ShowHideLibrary.IsChecked = true;
             }
-            AppTitleBar.Loaded += AppTitleBar_Loaded;
-        }
-        private void AppTitleBar_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Parts get delay loaded. If you have the parts, make them visible.
-            VisualStateManager.GoToState(AppTitleBar, "SubtitleTextVisible", false);
-            VisualStateManager.GoToState(AppTitleBar, "HeaderVisible", false);
-            VisualStateManager.GoToState(AppTitleBar, "ContentVisible", false);
-            VisualStateManager.GoToState(AppTitleBar, "FooterVisible", false);
-
-            // Run layout so we re-calculate the drag regions.
-            AppTitleBar.InvalidateMeasure();
         }
         public static void CreateModalWindow(WindowEx parentWindow, WindowEx childWindow, bool summonWindowAutomatically = true, bool blockInput = false)
         {

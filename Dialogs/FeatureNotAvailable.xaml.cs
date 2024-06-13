@@ -28,18 +28,6 @@ namespace VMsApp.Dialogs
             AppWindow.Resize(new SizeInt32(400, 250));
             this.CenterOnScreen();
             SetTitleBar(FeatureNotAvailableTitleBar);
-            FeatureNotAvailableTitleBar.Loaded += FeatureNotAvailableTitleBar_Loaded;
-        }
-        private void FeatureNotAvailableTitleBar_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Parts get delay loaded. If you have the parts, make them visible.
-            VisualStateManager.GoToState(FeatureNotAvailableTitleBar, "SubtitleTextVisible", false);
-            VisualStateManager.GoToState(FeatureNotAvailableTitleBar, "HeaderVisible", false);
-            VisualStateManager.GoToState(FeatureNotAvailableTitleBar, "ContentVisible", false);
-            VisualStateManager.GoToState(FeatureNotAvailableTitleBar, "FooterVisible", false);
-
-            // Run layout so we re-calculate the drag regions.
-            FeatureNotAvailableTitleBar.InvalidateMeasure();
         }
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {

@@ -15,10 +15,9 @@
     </Window.SystemBackdrop>
 
     <Grid>
-        <TitleBar x:Name="AppTitleBar" Height="40" VerticalAlignment="Top" Background="Transparent">
-            <TitleBar.Header>
-                <StackPanel x:Name="TitleBar" Orientation="Horizontal" Background="Transparent">
-                    <Border             
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="40" VerticalAlignment="Top">
+            <StackPanel x:Name="TitleBar" Orientation="Horizontal" Background="Transparent">
+                <Border             
                 Height="40"
                 Margin="12,2,0,0"
                 VerticalAlignment="Top"
@@ -27,8 +26,8 @@
                 IsHitTestVisible="True"
                 RelativePanel.AlignLeftWithPanel="True"
                 RelativePanel.AlignRightWithPanel="True">
-                        <StackPanel Orientation="Horizontal" Width="Auto">
-                            <Image
+                    <StackPanel Orientation="Horizontal" Width="Auto">
+                        <Image
                         x:Name="AppFontIcon"
                         Width="24"
                         Height="24"
@@ -36,18 +35,17 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
                         Source="ms-appx:///Assets/Square44x44Logo.png" />
-                            <TextBlock
+                        <TextBlock
                         x:Name="AppTitle"
                         Margin="12,2,4,0"
                         VerticalAlignment="Center"
                         Text="VMsApp"
                         FontSize="12"
                         FontWeight="Normal" Foreground="{ThemeResource SystemAccentColor}"/>
-                        </StackPanel>
-                    </Border>
-                </StackPanel>
-            </TitleBar.Header>
-        </TitleBar>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
         <Grid x:Name="Toolbar" VerticalAlignment="Top" Height="48" Margin="0,40,0,0">
             <StackPanel x:Name="MenuStack" Orientation="Horizontal" HorizontalAlignment="Left">
                 <MenuBar>
