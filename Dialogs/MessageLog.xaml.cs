@@ -16,11 +16,13 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics;
 using WinUIEx;
+using WinUIEx.Messaging;
 
 namespace VMsApp.Dialogs
 {
     public sealed partial class MessageLog : WindowEx
     {
+        private WindowMessageMonitor _msgMonitor;
         public MessageLog()
         {
             this.InitializeComponent();
@@ -28,6 +30,18 @@ namespace VMsApp.Dialogs
             AppWindow.Resize(new SizeInt32(440, 500));
             this.CenterOnScreen();
             SetTitleBar(MessageLogTitleBar);
+
+            _msgMonitor = new WindowMessageMonitor(this);
+            _msgMonitor.WindowMessageReceived += (_, e) =>
+            {
+                const int WM_NCLBUTTONDBLCLK = 0x00A3;
+                if (e.Message.MessageId == WM_NCLBUTTONDBLCLK)
+                {
+                    // Disable double click on title bar to maximize window
+                    e.Result = 0;
+                    e.Handled = true;
+                }
+            };
         }
     }
 }
