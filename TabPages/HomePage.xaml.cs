@@ -61,18 +61,6 @@ namespace VMsApp.TabPages
         {
             this.InitializeComponent();
         }
-        public void ChangeCursor(InputCursor cursor)
-        {
-            this.ProtectedCursor = cursor;
-        } 
-        private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            ChangeCursor(InputSystemCursor.Create(InputSystemCursorShape.Hand));
-        }
-        private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            ChangeCursor(InputSystemCursor.Create(InputSystemCursorShape.Arrow));
-        }
         private void CreateVMButton_Click(object sender, RoutedEventArgs e)
         {
             var logWin = new NewVMWizard();

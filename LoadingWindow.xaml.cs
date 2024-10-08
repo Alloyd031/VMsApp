@@ -1,6 +1,4 @@
-using Microsoft.UI.Composition;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Documents;
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -20,8 +18,6 @@ namespace VMsApp
             this.SetIsMaximizable(false);
             this.CenterOnScreen();
             this.SetIsAlwaysOnTop(true);
-            //this.BringToFront();
-            //WindowHelper.RemoveIcon(this);
             this.AppWindow.TitleBar.PreferredHeightOption = Microsoft.UI.Windowing.TitleBarHeightOption.Collapsed;
             try
             {

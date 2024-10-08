@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="VMsApp.LoadingWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -8,6 +7,9 @@
     xmlns:winuiex="using:WinUIEx"
     xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d">
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="Base"/>
+    </Window.SystemBackdrop>
     <Grid>
         <Image Source="ms-appx:///Assets/Square44x44Logo.png" Width="125" HorizontalAlignment="Left" Margin="50"/>
         <StackPanel Margin="225, 45, 0, 0">
