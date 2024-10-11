@@ -62,8 +62,6 @@ namespace VMsApp
             };
 
             overlappedPresenter = AppWindow.Presenter as OverlappedPresenter;
-            ExtendsContentIntoTitleBar = true;
-            SystemBackdrop = new MicaBackdrop();
             contentCoordinateConverter = ContentCoordinateConverter.CreateForWindowId(AppWindow.Id);
 
             mainWindowSubClassProc = new SUBCLASSPROC(MainWindowSubClassProc);

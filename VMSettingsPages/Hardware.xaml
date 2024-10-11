@@ -18,44 +18,44 @@
     </Page.Resources>
     
     <Grid>
-        <NavigationView x:Name="HardwareNavView" IsSettingsVisible="False" IsPaneOpen="False" Loaded="HardwareNavView_Loaded" OpenPaneLength="220" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" ItemInvoked="HardwareNavView_ItemInvoked">
+        <NavigationView x:Name="HardwareNavView" IsSettingsVisible="False" IsPaneOpen="False" SelectionChanged="HardwareNavView_SelectionChanged" OpenPaneLength="220" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False">
             <NavigationView.MenuItems>
-                <NavigationViewItem x:Name="Memory" Content="Memory" IsSelected="True">
+                <NavigationViewItem Tag="Memory" Content="Memory" IsSelected="True">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE964;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Processors" Content="Processors">
+                <NavigationViewItem Tag="Processors" Content="Processors">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE950;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="HardDisk" Content="Hard Disk (SCSI)">
+                <NavigationViewItem Tag="HardDisk" Content="Hard Disk (SCSI)">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xEDA2;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="CDDVD" Content="CD/DVD (IDE)">
+                <NavigationViewItem Tag="CDDVD" Content="CD/DVD (IDE)">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE958;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="NetworkAdapter" Content="Network Adapter">
+                <NavigationViewItem Tag="NetworkAdapter" Content="Network Adapter">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xEDA3;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="USBController" Content="USB Controller">
+                <NavigationViewItem Tag="USBController" Content="USB Controller">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE88E;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="SoundCard" Content="Sound Card">
+                <NavigationViewItem Tag="SoundCard" Content="Sound Card">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE15D;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Display" Content="Display">
+                <NavigationViewItem Tag="Display" Content="Display">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE7F4;"/>
                     </NavigationViewItem.Icon>

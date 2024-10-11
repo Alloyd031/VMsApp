@@ -61,8 +61,6 @@ namespace VMsApp
             }
 
             overlappedPresenter = AppWindow.Presenter as OverlappedPresenter;
-            ExtendsContentIntoTitleBar = true;
-            SystemBackdrop = new MicaBackdrop();
             IsWindowMaximized = overlappedPresenter.State is OverlappedPresenterState.Maximized;
             contentCoordinateConverter = ContentCoordinateConverter.CreateForWindowId(AppWindow.Id);
 

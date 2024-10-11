@@ -80,5 +80,53 @@ namespace VMsApp.VMSettingsPages
             }
             OptionsFrame.Navigate(typeof(NotAvailable));
         }
+        private void OptionsNavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            if (args.SelectedItem is NavigationViewItem selectedItem)
+            {
+                switch (selectedItem.Tag)
+                {
+                    case "General":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "Power":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "SharedFolders":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "Snapshots":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "NetworkAdapter":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "GuestIsolation":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "AccessControl":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "VMsTools":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "VNCConnections":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "Unity":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "ApplianceView":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "Autologin":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                    case "Advanced":
+                        OptionsFrame.Navigate(typeof(NotAvailable), null, new SuppressNavigationTransitionInfo());
+                        break;
+                }
+            }
+        }
     }
 }

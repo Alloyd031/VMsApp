@@ -18,69 +18,69 @@
     </Page.Resources>
     
     <Grid>
-        <NavigationView x:Name="OptionsNavView" IsSettingsVisible="False" Loaded="OptionsNavView_Loaded" OpenPaneLength="220" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" ItemInvoked="OptionsNavView_ItemInvoked">
+        <NavigationView x:Name="OptionsNavView" IsSettingsVisible="False" OpenPaneLength="220" SelectionChanged="OptionsNavView_SelectionChanged" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False">
             <NavigationView.MenuItems>
-                <NavigationViewItem x:Name="General" Content="General" IsSelected="True">
+                <NavigationViewItem Tag="General" Content="General" IsSelected="True">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE977;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Power" Content="Power">
+                <NavigationViewItem Tag="Power" Content="Power">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE102;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="SharedFolders" Content="Shared Folders">
+                <NavigationViewItem Tag="SharedFolders" Content="Shared Folders">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE8B7;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Snapshots" Content="Snapshots">
+                <NavigationViewItem Tag="Snapshots" Content="Snapshots">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xF739;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="AutoProtect" Content="AutoProtect">
+                <NavigationViewItem Tag="AutoProtect" Content="AutoProtect">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xF738;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="GuestIsolation" Content="Guest Isolation">
+                <NavigationViewItem Tag="GuestIsolation" Content="Guest Isolation">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE72E;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="AccessControl" Content="Access Control">
+                <NavigationViewItem Tag="AccessControl" Content="Access Control">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xEE3F;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="VMsTools" Content="VMsTools">
+                <NavigationViewItem Tag="VMsTools" Content="VMsTools">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xEC7A;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="VNCConnections" Content="VNC Connections">
+                <NavigationViewItem Tag="VNCConnections" Content="VNC Connections">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE148;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Unity" Content="Unity">
+                <NavigationViewItem Tag="Unity" Content="Unity">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE2AE;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="ApplianceView" Content="Appliance View">
+                <NavigationViewItem Tag="ApplianceView" Content="Appliance View">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE12A;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Autologin" Content="Autologin">
+                <NavigationViewItem Tag="Autologin" Content="Autologin">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE1A6;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Name="Advanced" Content="Advanced">
+                <NavigationViewItem Tag="Advanced" Content="Advanced">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE9D9;"/>
                     </NavigationViewItem.Icon>

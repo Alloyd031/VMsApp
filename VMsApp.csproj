@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>VMsApp</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -55,8 +55,6 @@
     <None Remove="VMSettingsPages\Hardware.xaml" />
     <None Remove="VMSettingsPages\NotAvailable.xaml" />
     <None Remove="VMSettingsPages\Options.xaml" />
-    <None Remove="VMSettingsPages\VMSettingsHardware\Memory.xaml" />
-    <None Remove="VMSettingsPages\VMSettingsHardware\Processors.xaml" />
     <None Remove="Wizards\NewVMWizard.xaml" />
   </ItemGroup>
 
@@ -218,11 +216,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="VMSettingsPages\VMSettingsHardware\Processors.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
     <Page Update="AboutApp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -264,11 +257,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Dialogs\FeatureNotAvailable.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="VMSettingsPages\VMSettingsHardware\Memory.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
